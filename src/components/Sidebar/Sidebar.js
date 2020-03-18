@@ -10,14 +10,16 @@ import {
   LibraryBooks as LibraryIcon,
   HelpOutline as FAQIcon,
   ArrowBack as ArrowBackIcon,
+  ChromeReaderMode as ChromeReaderMode,
+  AssignmentInd as AssignmentInd
 } from "@material-ui/icons";
 import { useTheme } from "@material-ui/styles";
 import { withRouter } from "react-router-dom";
+
 import classNames from "classnames";
 
 // styles
 import useStyles from "./styles";
-
 // components
 import SidebarLink from "./components/SidebarLink/SidebarLink";
 import Dot from "./components/Dot";
@@ -30,14 +32,19 @@ import {
 } from "../../context/LayoutContext";
 
 const structure = [
-  { id: 0, label: "Dashboard", link: "/app/dashboard", icon: <HomeIcon /> },
+  { id: 0, label: "Home", link: "/app/home", icon: <HomeIcon /> },
   {
     id: 1,
-    label: "Typography",
+    label: "Courses",
     link: "/app/typography",
-    icon: <TypographyIcon />,
+    icon: <ChromeReaderMode />,
+    children: [
+      { label: "English", link: "/app/ui/icons" },
+      { label: "Computer", link: "/app/ui/charts" },
+      { label: "Kids&Youth", link: "/app/ui/maps" },
+    ],
   },
-  { id: 2, label: "Tables", link: "/app/tables", icon: <TableIcon /> },
+  { id: 2, label: "Our Teachers", link: "/app/teachers", icon: <AssignmentInd /> },
   {
     id: 3,
     label: "Notifications",
@@ -59,25 +66,26 @@ const structure = [
   { id: 6, type: "title", label: "HELP" },
   { id: 7, label: "Library", link: "", icon: <LibraryIcon /> },
   { id: 8, label: "Support", link: "", icon: <SupportIcon /> },
-  { id: 9, label: "FAQ", link: "", icon: <FAQIcon /> },
+ 
+
   { id: 10, type: "divider" },
   { id: 11, type: "title", label: "PROJECTS" },
   {
     id: 12,
-    label: "My recent",
-    link: "",
+    label: "CRM",
+    link: "/app/notifications",
     icon: <Dot size="large" color="warning" />,
   },
   {
     id: 13,
-    label: "Starred",
+    label: "E-Learning",
     link: "",
     icon: <Dot size="large" color="primary" />,
   },
   {
     id: 14,
-    label: "Background",
-    link: "",
+    label: "Admin Dashboard",
+    link: "/app/dashboard",
     icon: <Dot size="large" color="secondary" />,
   },
 ];

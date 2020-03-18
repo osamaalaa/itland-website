@@ -10,20 +10,24 @@ import Login from "../pages/login";
 
 // context
 import { useUserState } from "../context/UserContext";
+import MainPage from '../pages/mainpage/mainpage';
 
 export default function App() {
   // global
   var { isAuthenticated } = useUserState();
 
   return (
+
+    
     <HashRouter>
       <Switch>
-        <Route exact path="/" render={() => <Redirect to="/app/dashboard" />} />
+        <Route exact path="/" render={() => <Redirect to="/app/home"/>} />
         <Route
           exact
           path="/app"
-          render={() => <Redirect to="/app/dashboard" />}
+          render={() => <Redirect to="/app/home" />}
         />
+        {/* <PrivateRoute path="/app" component={Error} /> */}
         <PrivateRoute path="/app" component={Layout} />
         <PublicRoute path="/login" component={Login} />
         <Route component={Error} />

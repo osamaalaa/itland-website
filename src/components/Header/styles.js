@@ -105,7 +105,7 @@ export default makeStyles(theme => ({
   },
   headerIcon: {
     fontSize: 28,
-    color: "rgba(255, 255, 255, 0.35)",
+    color: "rgba(255, 255, 255, 0.70)",
   },
   headerIconCollapse: {
     color: "white",

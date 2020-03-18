@@ -22,7 +22,9 @@ import Maps from "../../pages/maps";
 import Tables from "../../pages/tables";
 import Icons from "../../pages/icons";
 import Charts from "../../pages/charts";
-
+import MainPage from '../../pages/mainpage/mainpage';
+import Home from '../../pages/home/home';
+import Teacher from '../../pages/teachers/teachers';
 // context
 import { useLayoutState } from "../../context/LayoutContext";
 
@@ -48,6 +50,9 @@ function Layout(props) {
               <Route path="/app/typography" component={Typography} />
               <Route path="/app/tables" component={Tables} />
               <Route path="/app/notifications" component={Notifications} />
+              <Route path ="/app/aya/mainpage" component={MainPage} />
+              <Route path ="/app/home" component={Home} /> 
+              <Route path ="/app/teachers" component={Teacher} /> 
               <Route
                 exact
                 path="/app/ui"
