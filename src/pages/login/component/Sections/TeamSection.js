@@ -13,12 +13,10 @@ import Button from "../Button";
 import Card from "../Card/Card";
 import CardBody from "../Card/CardBody";
 import CardFooter from "../Card/CardFooter.js";
-
 import styles from "./teamStyle";
-
-import team1 from "./img/faces/avatar.jpg";
-import team2 from "./img/faces/christian.jpg";
-import team3 from "./img/faces/kendall.jpg";
+import team1 from "./img/faces/osama.jpg";
+import team2 from "./img/faces/aya.jpg";
+import team3 from "./img/faces/lotfe.jpg";
 
 const useStyles = makeStyles(styles);
 
@@ -40,9 +38,9 @@ export default function TeamSection() {
                 <img src={team1} alt="..." className={imageClasses} />
               </GridItem>
               <h4 className={classes.cardTitle}>
-                Gigi Hadid
+                Osama Alaa
                 <br />
-                <small className={classes.smallTitle}>Model</small>
+                <small className={classes.smallTitle}>Software Developer</small>
               </h4>
               <CardBody>
                 <p className={classes.description}>
@@ -83,9 +81,9 @@ export default function TeamSection() {
                 <img src={team2} alt="..." className={imageClasses} />
               </GridItem>
               <h4 className={classes.cardTitle}>
-                Christian Louboutin
+                Aya Nawar
                 <br />
-                <small className={classes.smallTitle}>Designer</small>
+                <small className={classes.smallTitle}>Software Developer</small>
               </h4>
               <CardBody>
                 <p className={classes.description}>
@@ -119,9 +117,9 @@ export default function TeamSection() {
                 <img src={team3} alt="..." className={imageClasses} />
               </GridItem>
               <h4 className={classes.cardTitle}>
-                Kendall Jenner
+               Mohamed Lotfe
                 <br />
-                <small className={classes.smallTitle}>Model</small>
+                <small className={classes.smallTitle}>Software Developer</small>
               </h4>
               <CardBody>
                 <p className={classes.description}>

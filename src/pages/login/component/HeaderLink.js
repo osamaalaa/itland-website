@@ -19,6 +19,10 @@ import CustomDropdown from "./CustomDropdown.js";
 import Button from "./Button";
 
 import styles from "./headerLinkStyle";
+import fontawesome from '@fortawesome/fontawesome'
+import brands from '@fortawesome/fontawesome-free-brands'
+
+fontawesome.library.add(brands)
 
 const useStyles = makeStyles(styles);
 
@@ -31,22 +35,22 @@ export default function HeaderLinks(props) {
       <ListItem className={classes.listItem}>
         <CustomDropdown
           noLiPadding
-          buttonText="Components"
+          buttonText="Login"
           buttonProps={{
             className: classes.navLink,
             color: "transparent"
           }}
           buttonIcon={Apps}
           dropdownList={[
-            <Link to="/" className={classes.dropdownLink}>
-              Products
+            <Link to="/https://www.facebook.com/osamaalaa133" className={classes.dropdownLink}>
+              Courses
             </Link>,
             <a
-              href="https://creativetimofficial.github.io/material-kit-react/#/documentation?ref=mkr-navbar"
+              href="https://www.facebook.com/osamaalaa133"
               target="_blank"
               className={classes.dropdownLink}
             >
-              Documentation
+              Products
             </a>
           ]}
         />
@@ -74,7 +78,7 @@ export default function HeaderLinks(props) {
           classes={{ tooltip: classes.tooltip }}
         >
           <Button
-            href="https://twitter.com/CreativeTim?ref=creativetim"
+            href="https://www.facebook.com/osamaalaa133"
             target="_blank"
             color="transparent"
             className={classes.navLink}
@@ -92,7 +96,7 @@ export default function HeaderLinks(props) {
         >
           <Button
             color="transparent"
-            href="https://www.facebook.com/CreativeTim?ref=creativetim"
+            href="https://www.facebook.com/itlandservices/"
             target="_blank"
             className={classes.navLink}
           >
@@ -109,7 +113,7 @@ export default function HeaderLinks(props) {
         >
           <Button
             color="transparent"
-            href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
+            href="https://www.facebook.com/osamaalaa133"
             target="_blank"
             className={classes.navLink}
           >

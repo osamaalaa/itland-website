@@ -37,18 +37,83 @@ import image from "./component/1.jpg";
 import ProductSection from "./component/Sections/ProductSection";
 import TeamSection from "./component/Sections/TeamSection";
 import WorkSection from "./component/Sections/WorkSection";
-
-
 import { useUserDispatch, loginUser } from "../../context/UserContext";
 import classNames from "classnames";
+import fontawesome from '@fortawesome/fontawesome';
+import brands from '@fortawesome/fontawesome-free-brands';
+import {
+  Carousel,
+  CarouselItem,
+  CarouselControl,
+  CarouselIndicators,
+  CarouselCaption
+} from 'reactstrap';
+import { MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardImage,
+MDBCardBody, MDBCardTitle, MDBCardText, MDBBtn } from "mdbreact";
+
+
+
+const items = [
+  {
+    id: 1,
+    altText: 'Slide 1',
+    caption: 'Slide 1'
+  },
+  {
+    id: 2,
+    altText: 'Slide 2',
+    caption: 'Slide 2'
+  },
+  {
+    id: 3,
+    altText: 'Slide 3',
+    caption: 'Slide 3'
+  }
+];
+
+
+fontawesome.library.add(brands)
 const dashboardRoutes = [];
 
 
 const useStyles = makeStyles(styles);
 
 function Login(props) {
+//============================================================
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [animating, setAnimating] = useState(false);
 
+  const next = () => {
+    if (animating) return;
+    const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
+    setActiveIndex(nextIndex);
+  }
 
+  const previous = () => {
+    if (animating) return;
+    const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
+    setActiveIndex(nextIndex);
+  }
+
+  const goToIndex = (newIndex) => {
+    if (animating) return;
+    setActiveIndex(newIndex);
+  }
+
+  const slides = items.map((item) => {
+    return (
+      <CarouselItem
+        className="custom-tag"
+        tag="div"
+        key={item.id}
+        onExiting={() => setAnimating(true)}
+        onExited={() => setAnimating(false)}
+      >
+        <CarouselCaption className="text-danger" captionText={item.caption} captionHeader={item.caption} />
+      </CarouselItem>
+    );
+  });
+  //======================================End======================================
   // global
   var userDispatch = useUserDispatch();
 
@@ -63,6 +128,7 @@ function Login(props) {
   const { ...rest } = props;
   return (
     <div>
+      <img />
       <Header
         color="transparent"
         routes={dashboardRoutes}
@@ -75,11 +141,15 @@ function Login(props) {
         }}
         {...rest}
       />
+      {/* ======================================================= */}
+
+
+      {/* ==================================================== */}
       <Parallax filter image={require("./component/1.jpg")}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
-              <h1 className={classes.title}>Your Story Starts With Us.</h1>
+              <h1 className={classes.title}>Your Career Starts With Us.</h1>
               <h4>
                 Every landing page needs a small description after the big bold
                 title, that{"'"}s why we added this text here. Add here all the
@@ -90,22 +160,27 @@ function Login(props) {
               <Button
                 color="danger"
                 size="lg"
-                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ref=creativetim"
+                href="https://www.youtube.com/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fas fa-play" />
+                <i className=" fab fa-play" />
                 Watch video
               </Button>
             </GridItem>
           </GridContainer>
         </div>
       </Parallax>
+      {/* ========================================================= */}
+
+
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
           <ProductSection />
           <TeamSection />
           <WorkSection />
+
+          
         </div>
       </div>
       <Footer />
@@ -114,6 +189,29 @@ function Login(props) {
 }
 
 export default withRouter(Login);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

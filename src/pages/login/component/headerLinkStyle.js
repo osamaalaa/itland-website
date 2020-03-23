@@ -28,7 +28,7 @@ const headerLinksStyle = theme => ({
         display: "block",
         height: "1px",
         marginLeft: "15px",
-        backgroundColor: "#e5e5e5"
+        backgroundColor: "#FF0000	"
       }
     }
   },
@@ -87,7 +87,7 @@ const headerLinksStyle = theme => ({
   },
   navLinkActive: {
     color: "inherit",
-    backgroundColor: "rgba(255, 255, 255, 0.1)"
+    backgroundColor: "rgba(255, 0, 0, 0.1)"
   },
   icons: {
     width: "20px",
