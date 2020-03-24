@@ -41,6 +41,28 @@ const teamStyle = {
   },
   margin5: {
     margin: "5px"
+  },
+  carContainer: {
+    position: "relative",
+    height: "100vh",
+    width: "100%",
+    display: "flex",
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "middle"
+  },
+  carCard: {
+    height: "200px",
+      width: "200px",
+      paddingTop: "80px",
+      textAlign: "center",
+      background: "#52C0F5",
+      color: "#FFF",
+      fontFamily: "sans-serif",
+      fontSize: "12px",
+      textTransform: "uppercase",
+      borderRadius: "10px",
+      boxSizing: "border-box"
   }
 };
 

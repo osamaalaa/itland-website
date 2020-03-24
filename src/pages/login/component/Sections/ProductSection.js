@@ -13,7 +13,8 @@ import GridItem from "../Grid/GridItem.js";
 import InfoArea from "../InfoArea/InfoArea";
 
 import styles from "./productStyle";
-
+import ReactCardCarousel from "react-card-carousel";
+import imageCard from "./img/faces/osama.jpg";
 const useStyles = makeStyles(styles);
 
 export default function ProductSection() {
@@ -24,42 +25,50 @@ export default function ProductSection() {
         <GridItem xs={12} sm={12} md={8}>
           <h2 className={classes.title}>Let{"'"}s talk about services</h2>
           <h5 className={classes.description}>
-            This is the paragraph where you can write more details about your
-            product. Keep you user engaged by providing meaningful information.
-            Remember that by this time, the user is curious, otherwise he wouldn
-            {"'"}t scroll to get here. Add a button if you want the user to see
-            more.
+          
           </h5>
         </GridItem>
       </GridContainer>
-      <div>
+      <div >
         <GridContainer>
           <GridItem xs={12} sm={12} md={4}>
-            <InfoArea
+            {/* <InfoArea
               title="English Courses"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
               icon={Chat}
               iconColor="info"
               vertical
-            />
+            /> */}
+            {/* <div  className={classes.carContainer}> */}
+                <ReactCardCarousel autoplay={true} autoplay_speed={2500}>
+                  <div ><img src={imageCard} alt="..." className={classes.imgCont} /></div>
+                  <div ><img src={imageCard} alt="..." className={classes.imgCont} /></div>
+                  <div ><img src={imageCard} alt="..." className={classes.imgCont} /></div>
+                  <div ><img src={imageCard} alt="..." className={classes.imgCont} /></div>
+                  <div ><img src={imageCard} alt="..." className={classes.imgCont} /></div>
+                </ReactCardCarousel>
+             {/* </div> */}
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
-            <InfoArea
-              title="Programming Courses"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-              icon={VerifiedUser}
-              iconColor="success"
-              vertical
-            />
+            <ReactCardCarousel autoplay={true} autoplay_speed={2500}>
+                  <div className={classes.carCard}>Programming First Card</div>
+                  <div className={classes.carCard}>Programming Second Card</div>
+                  <div className={classes.carCard}>Programming Third Card</div>
+                  <div className={classes.carCard}>Programming Fourth Card</div>
+                  <div className={classes.carCard}>Programming Fifth Card</div>
+          </ReactCardCarousel>
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
-            <InfoArea
-              title="Business Courses"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-              icon={Fingerprint}
-              iconColor="danger"
+              <ReactCardCarousel autoplay={true} autoplay_speed={2500}>
+                      <div className={classes.carCard}>Programming First Card</div>
+                      <div className={classes.carCard}>Programming Second Card</div>
+                      <div className={classes.carCard}>Programming Third Card</div>
+                      <div className={classes.carCard}>Programming Fourth Card</div>
+                      <div className={classes.carCard}>Programming Fifth Card</div>
+              </ReactCardCarousel>
+            {/* <InfoArea
+             
               vertical
-            />
+            /> */}
           </GridItem>
         </GridContainer>
       </div>

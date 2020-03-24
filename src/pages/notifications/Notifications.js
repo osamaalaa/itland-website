@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { Grid } from "@material-ui/core";
 import { Close as CloseIcon } from "@material-ui/icons";
 import { ToastContainer, toast } from "react-toastify";
-import SyntaxHighlighter from "react-syntax-highlighter";
-import { docco } from "react-syntax-highlighter/dist/esm/styles/hljs";
+// import SyntaxHighlighter from "react-syntax-highlighter";
+// import { docco } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import classnames from "classnames";
 
 // styles
@@ -140,10 +140,10 @@ export default function NotificationsPage(props) {
               </a>
             </Typography>
             <div className={classes.codeContainer}>
-              <SyntaxHighlighter
+              {/* <SyntaxHighlighter
                 className={classes.codeComponent}
                 language="javascript"
-                style={docco}
+                // style={docco}
               >{`
   // import needed components, functions and styles
   import { ToastContainer, toast } from 'react-toastify';
@@ -157,7 +157,7 @@ export default function NotificationsPage(props) {
       </button>
     </div>
   };
-            `}</SyntaxHighlighter>
+            `}</SyntaxHighlighter> */}
               <Typography variant="caption">
                 For more API information refer to the library documentation
               </Typography>

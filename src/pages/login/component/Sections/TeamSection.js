@@ -17,7 +17,7 @@ import styles from "./teamStyle";
 import team1 from "./img/faces/osama.jpg";
 import team2 from "./img/faces/aya.jpg";
 import team3 from "./img/faces/lotfe.jpg";
-
+import ReactCardCarousel from "react-card-carousel";
 const useStyles = makeStyles(styles);
 
 export default function TeamSection() {
@@ -155,6 +155,15 @@ export default function TeamSection() {
             </Card>
           </GridItem>
         </GridContainer>
+        <div  className={classes.carContainer}>
+        <ReactCardCarousel autoplay={true} autoplay_speed={2500}>
+          <div className={classes.carCard}>First Card</div>
+          <div className={classes.carCard}>Second Card</div>
+          <div className={classes.carCard}>Third Card</div>
+          <div className={classes.carCard}>Fourth Card</div>
+          <div className={classes.carCard}>Fifth Card</div>
+        </ReactCardCarousel>
+      </div>
       </div>
     </div>
   );
