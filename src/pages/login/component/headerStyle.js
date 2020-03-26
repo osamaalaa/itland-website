@@ -146,6 +146,11 @@ import {
       paddingRight: "0px",
       paddingLeft: "0",
       ...transition
+    },
+    imgBrand: {
+      maxWidth: "100%",
+      maxHeight: "100%"
+
     }
   };
   

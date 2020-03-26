@@ -10,7 +10,7 @@ import Login from "../pages/login";
 
 // context
 import { useUserState } from "../context/UserContext";
-import MainPage from '../pages/mainpage/mainpage';
+// import MainPage from '../pages/mainpage/mainpage';
 
 export default function App() {
   // global
