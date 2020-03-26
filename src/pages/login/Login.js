@@ -171,9 +171,7 @@ function Login(props) {
         <div className={classes.container}>
           <ProductSection />
           <TeamSection />
-          <Card>
              <Slider slides={images} />
-          </Card>
           <WorkSection /> 
         </div>
       </div>
