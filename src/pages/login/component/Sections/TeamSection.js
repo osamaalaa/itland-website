@@ -17,6 +17,7 @@ import styles from "./teamStyle";
 import team1 from "./img/faces/osama.jpg";
 import team2 from "./img/faces/aya.jpg";
 import team3 from "./img/faces/lotfe.jpg";
+import team0 from "./img/faces/moh.jpeg"
 import ReactCardCarousel from "react-card-carousel";
 const useStyles = makeStyles(styles);
 
@@ -31,8 +32,61 @@ export default function TeamSection() {
     <div className={classes.section}>
       <h2 className={classes.title}>Here is our team</h2>
       <div>
+        <GridContainer   container
+  direction="row"
+  justify="center"
+  alignItems="center">
+        <GridItem xs={12} sm={12} md={4}>
+            <Card plain>
+              <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
+                <img src={team0} alt="..." className={imageClasses} />
+              </GridItem>
+              <h4 className={classes.cardTitle}>
+                Mohamed ibrahim
+                <br />
+                <small className={classes.smallTitle}>Founder</small>
+              </h4>
+              <CardBody>
+                <p className={classes.description}>
+                  You can write here details about one of your team members. You
+                  can give more details about what they do. Feel free to add
+                  some <a href="#pablo">links</a> for people to be able to
+                  follow them outside the site.
+                </p>
+              </CardBody>
+              <CardFooter className={classes.justifyCenter}>
+                <Button
+                  justIcon
+                  color="transparent"
+                  className={classes.margin5}
+                >
+                  <i className={classes.socials + " fab fa-twitter"} />
+                </Button>
+                <Button
+                  justIcon
+                  color="transparent"
+                  className={classes.margin5}
+                >
+                  <i className={classes.socials + " fab fa-instagram"} />
+                </Button>
+                <Button
+                  justIcon
+                  color="transparent"
+                  className={classes.margin5}
+                >
+                  <i className={classes.socials + " fab fa-linkedin"} />
+                </Button>
+              </CardFooter>
+            </Card>
+          </GridItem>
+        </GridContainer>
+        </div>
+      <div>
+
+
+
         <GridContainer>
-          <GridItem xs={12} sm={12} md={4}>
+          <GridItem xs={12} sm={6} md={4}>
             <Card plain>
               <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
                 <img src={team1} alt="..." className={imageClasses} />
@@ -75,6 +129,9 @@ export default function TeamSection() {
               </CardFooter>
             </Card>
           </GridItem>
+
+
+
           <GridItem xs={12} sm={12} md={4}>
             <Card plain>
               <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
@@ -106,11 +163,21 @@ export default function TeamSection() {
                   color="transparent"
                   className={classes.margin5}
                 >
+                  <i className={classes.socials + " fab fa-instagram"} />
+                </Button>
+                <Button
+                  justIcon
+                  color="transparent"
+                  className={classes.margin5}
+                >
                   <i className={classes.socials + " fab fa-linkedin"} />
                 </Button>
               </CardFooter>
             </Card>
           </GridItem>
+          
+
+
           <GridItem xs={12} sm={12} md={4}>
             <Card plain>
               <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
