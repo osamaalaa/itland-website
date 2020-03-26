@@ -41,7 +41,6 @@ const headerLinksStyle = theme => ({
     padding: "0.9375rem",
     fontWeight: "400",
     fontSize: "12px",
-    textTransform: "uppercase",
     borderRadius: "3px",
     lineHeight: "20px",
     textDecoration: "none",
@@ -129,6 +128,12 @@ const headerLinksStyle = theme => ({
     },
     padding: {
         padding: theme.spacing.unit
+    },
+    ImgLogo:{
+      display: "block",
+      marginLeft: "auto",
+      marginRight: "auto",
+      width: "50%"
     }
 });
 

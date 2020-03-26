@@ -8,12 +8,7 @@ import { withRouter } from "react-router-dom";
 // import { useUserDispatch, loginUser } from "../../context/UserContext";
 
 import { makeStyles } from "@material-ui/core/styles";
-import InputAdornment from "@material-ui/core/InputAdornment";
-import Icon from "@material-ui/core/Icon";
 
-// @material-ui/icons
-import Email from "@material-ui/icons/Email";
-import People from "@material-ui/icons/People";
 
 // core components
 import Header from "./component/Header";
@@ -22,11 +17,6 @@ import Footer from "./component/Footer";
 import GridContainer from "./component/Grid/GridContainer";
 import GridItem from "./component/Grid/GridItem";
 import Button from "./component/Button";
-import Card from "./component/Card/Card";
-import CardBody from "./component/Card/CardBody";
-import CardHeader from "./component/Card/CardHeader";
-import CardFooter from "./component/Card/CardFooter";
-import CustomInput from "./component/CustomInput/CustomInput";
 import Parallax from "./component/Parallax/Parallax";
 // import styles from "./component/loginPageStyle";
 import styles from "./component/landingPage.js";
@@ -41,37 +31,11 @@ import { useUserDispatch, loginUser } from "../../context/UserContext";
 import classNames from "classnames";
 import fontawesome from '@fortawesome/fontawesome';
 import brands from '@fortawesome/fontawesome-free-brands';
-import {
-  Carousel,
-  CarouselItem,
-  CarouselControl,
-  CarouselIndicators,
-  CarouselCaption
-} from 'reactstrap';
-import { MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardImage,
-MDBCardBody, MDBCardTitle, MDBCardText, MDBBtn } from "mdbreact";
+
 
 import Slider from './component/ImageSlider/Slider';
 import images from './component/ImageSlider/images';
 
-
-const items = [
-  {
-    id: 1,
-    altText: 'Slide 1',
-    caption: 'Slide 1'
-  },
-  {
-    id: 2,
-    altText: 'Slide 2',
-    caption: 'Slide 2'
-  },
-  {
-    id: 3,
-    altText: 'Slide 3',
-    caption: 'Slide 3'
-  }
-];
 
 
 fontawesome.library.add(brands)
@@ -82,46 +46,14 @@ const useStyles = makeStyles(styles);
 
 function Login(props) {
 //============================================================
-  const [activeIndex, setActiveIndex] = useState(0);
-  const [animating, setAnimating] = useState(false);
 
-  const next = () => {
-    if (animating) return;
-    const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
-    setActiveIndex(nextIndex);
-  }
-
-  const previous = () => {
-    if (animating) return;
-    const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
-    setActiveIndex(nextIndex);
-  }
-
-  const goToIndex = (newIndex) => {
-    if (animating) return;
-    setActiveIndex(newIndex);
-  }
-
-  const slides = items.map((item) => {
-    return (
-      <CarouselItem
-        className="custom-tag"
-        tag="div"
-        key={item.id}
-        onExiting={() => setAnimating(true)}
-        onExited={() => setAnimating(false)}
-      >
-        <CarouselCaption className="text-danger" captionText={item.caption} captionHeader={item.caption} />
-      </CarouselItem>
-    );
-  });
+  
   //======================================End======================================
   // global
   const classes = useStyles();
   const { ...rest } = props;
   return (
     <div>
-      <img />
       <Header
         color="transparent"
         routes={dashboardRoutes}

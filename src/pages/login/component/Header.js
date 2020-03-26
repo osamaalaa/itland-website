@@ -21,7 +21,14 @@ import Drawer from "@material-ui/core/Drawer";
 import Menu from "@material-ui/icons/Menu";
 // core components
 import styles from "./headerStyle";
- import LogoImg from "../../../images/logo.png";
+import LogoImg from "../../../images/logo.png";
+
+import Slider from './ImageSlider/Slider';
+import images from './ImageSlider/images';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
+
+
 const useStyles = makeStyles(styles);
 
 export default function Header(props) {
@@ -68,10 +75,33 @@ export default function Header(props) {
     [classes.absolute]: absolute,
     [classes.fixed]: fixed
   });
-  const brandComponent = <img src={LogoImg} alt=".." className={classes.imgBrand}  />;
+  const brandComponent = <img src={LogoImg} alt=".." className={classes.imgBrand}  />;  
+  // eslint-disable-next-line jsx-a11y/iframe-has-title
+  // const brandComponent = 
   return (
     <AppBar className={appBarClasses}>
       <Toolbar className={classes.container}>
+        
+         
+           <img src={LogoImg} alt=".." className={classes.imgBrand}  />
+          
+      
+        <Hidden smDown implementation="css">
+          {rightLinks}
+        </Hidden>
+        <Hidden mdUp>
+          <IconButton
+            color="inherit"
+            aria-label="open drawer"
+            onClick={handleDrawerToggle}
+          >
+            <Menu />
+          </IconButton>
+        </Hidden>
+      </Toolbar>
+
+
+      {/* <Toolbar className={classes.container}>
         {leftLinks !== undefined ? brandComponent : null}
         <div className={classes.flex}>
           {leftLinks !== undefined ? (
@@ -94,7 +124,8 @@ export default function Header(props) {
             <Menu />
           </IconButton>
         </Hidden>
-      </Toolbar>
+      </Toolbar> */}
+
       <Hidden mdUp implementation="js">
         <Drawer
           variant="temporary"

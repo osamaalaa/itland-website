@@ -49,7 +49,7 @@ import {
       flexWrap: "nowrap"
     },
     flex: {
-      flex: 1
+      // flex: 1
     },
     title: {
       ...defaultFont,

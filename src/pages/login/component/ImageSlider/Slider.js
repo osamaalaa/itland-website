@@ -43,9 +43,9 @@ const Slider = props => {
     }
 
     const smooth = e => {
-      if (e.target.className.includes('SliderContent')) {
+    
         transitionRef.current()
-      }
+      
     }
 
     const resize = () => {

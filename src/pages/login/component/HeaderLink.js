@@ -1,5 +1,5 @@
 /*eslint-disable*/
-import React from "react";
+import React , { useState } from "react";
 import DeleteIcon from "@material-ui/icons/Delete";
 import IconButton from "@material-ui/core/IconButton";
 // react components for routing our app without refresh
@@ -30,8 +30,13 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import { Paper, withStyles, Grid, TextField, FormControlLabel, Checkbox } from '@material-ui/core';
 import { Face, Fingerprint } from '@material-ui/icons'
-
+import logo from "../../../images/logo.png";
 // ================================================================
+
+//===================UserLogin=========================================
+import { useUserDispatch, loginUser } from "../../../context/UserContext";
+
+//======================================================================
 
 fontawesome.library.add(brands)
 const useStyles = makeStyles(styles);
@@ -39,23 +44,40 @@ const useStyles = makeStyles(styles);
 
 export default function HeaderLinks(props)
  {    
+
+  
   const classes = useStyles();
-  const [open, setOpen] = React.useState(false);
+  const [openModel, setOpenModel] = React.useState(false);
 
   const handleOpen = () => {
-    setOpen(true);
+    setOpenModel(true);
   };
 
   const handleClose = () => {
-    setOpen(false);
+    setOpenModel(false);
   };
+
+  // =======================
+  // global
+  var userDispatch = useUserDispatch();
+
+  // local
+  var [isLoading, setIsLoading] = useState(false);
+  var [error, setError] = useState(null);
+  var [activeTabId, setActiveTabId] = useState(0);
+  var [nameValue, setNameValue] = useState("");
+  var [loginValue, setLoginValue] = useState("");
+  var [passwordValue, setPasswordValue] = useState("");
+
+
+  //==========================
 
   return (
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
         <CustomDropdown
           noLiPadding
-          buttonText="Login"
+          buttonText="OUR SERVICES"
           buttonProps={{
             className: classes.navLink,
             color: "transparent"
@@ -87,7 +109,7 @@ export default function HeaderLinks(props)
               aria-labelledby="transition-modal-title"
               aria-describedby="transition-modal-description"
               className={classes.modal}
-              open={open}
+              open={openModel}
               onClose={handleClose}
               closeAfterTransition
               BackdropComponent={Backdrop}
@@ -95,15 +117,20 @@ export default function HeaderLinks(props)
                 timeout: 500,
               }}
             >
-            <Fade in={open}>
+            <Fade in={openModel}>
                   <Paper className={classes.padding}>
+                    <img src ={logo} alt="logoImg"  className= {classes.ImgLogo}/>
                       <div className={classes.margin}>
                           <Grid container spacing={8} alignItems="flex-end">
                               <Grid item>
                                   <Face />
                               </Grid>
                               <Grid item md={true} sm={true} xs={true}>
-                                  <TextField id="username" label="Username" type="email" fullWidth autoFocus required />
+                                  <TextField id="username" 
+                                  label="ITLAND Code"
+                                   type="email"    
+                                    value={loginValue}
+                                    onChange={e => setLoginValue(e.target.value)} fullWidth autoFocus required />
                               </Grid>
                           </Grid>
                           <Grid container spacing={8} alignItems="flex-end">
@@ -111,7 +138,8 @@ export default function HeaderLinks(props)
                                   <Fingerprint />
                               </Grid>
                               <Grid item md={true} sm={true} xs={true}>
-                                  <TextField id="username" label="Password" type="password" fullWidth required />
+                                  <TextField id="username" label="Password" type="password"  value={passwordValue}
+                                                          onChange={e => setPasswordValue(e.target.value)} fullWidth required />
                               </Grid>
                           </Grid>
                           <Grid container alignItems="center" justify="space-between">
@@ -123,11 +151,27 @@ export default function HeaderLinks(props)
                                   } label="Remember me" />
                               </Grid>
                               <Grid item>
-                                  <Button disableFocusRipple disableRipple style={{ textTransform: "none" }} variant="text" color="primary">Forgot password ?</Button>
+                                  {/* <Button disableFocusRipple disableRipple style={{ textTransform: "none" }} variant="text" color="primary">Forgot password ?</Button> */}
                               </Grid>
                           </Grid>
                           <Grid container justify="center" style={{ marginTop: '10px' }}>
-                              <Button variant="outlined" color="primary" style={{ textTransform: "none" }}>Login</Button>
+                              <Button
+                               variant="outlined" color="primary" style={{ textTransform: "none" }}
+                               disabled={
+                                loginValue.length === 0 || passwordValue.length === 0
+                              }
+                              onClick={() =>
+                                loginUser(
+                                  userDispatch,
+                                  loginValue,
+                                  passwordValue,
+                                  props.history,
+                                  setIsLoading,
+                                  setError,
+                                )
+                              }
+                               
+                               >Login</Button>
                           </Grid>
                       </div>
                   </Paper>
