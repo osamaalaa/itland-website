@@ -11,6 +11,8 @@ import styles from "./parallaxStyle";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 
+import Slider from '../ImageSlider/Slider';
+import images from '../ImageSlider/images';
 const useStyles = makeStyles(styles);
 
 export default function Parallax(props) {
@@ -45,29 +47,17 @@ export default function Parallax(props) {
     [classes.small]: small,
     [className]: className !== undefined
   });
-  const osama = <Carousel>
-                      <div>
-                          <img src="aya.jpg" alt="..." />
-                          <p className="legend">Legend 1</p>
-                      </div>
-                      <div>
-                          <img src="aya.jpg" alt=".." />
-                          <p className="legend">Legend 2</p>
-                      </div>
-                      <div>
-                          <img src="aya.jpg" alt=".." />
-                          <p className="legend">Legend 3</p>
-                      </div>
-                    </Carousel>;
+  
   return (
     <div
       className={parallaxClasses}
       style={{
         ...style,
-        backgroundImage: "url(" + image + ")",
+        backgroundImage: <Slider slides={images} />,
         transform: transform
       }}
     >
+       
       {children}
     </div>
 

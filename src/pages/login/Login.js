@@ -44,7 +44,7 @@ const dashboardRoutes = [];
 
 const useStyles = makeStyles(styles);
 
-function Login(props) {
+function Login(props) { 
 //============================================================
 
   
@@ -70,7 +70,11 @@ function Login(props) {
 
 
       {/* ==================================================== */}
-      <Parallax filter image={require("./component/1.jpg")}>
+      {/* <Parallax filter image={require("./component/1.jpg")}> */}
+      <Parallax filter >
+      {/* <Slider slides={images} />
+      height: 86vh;
+    width: 102vw; */}
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
