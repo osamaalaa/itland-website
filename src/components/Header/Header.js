@@ -35,7 +35,7 @@ import {
   toggleSidebar,
 } from "../../context/LayoutContext";
 import { useUserDispatch, signOut } from "../../context/UserContext";
-import logo from "../../images/logo.png"; // logo Import
+import logo from "../../assets/img/logo.png"; // logo Import
 const messages = [
   {
     id: 0,

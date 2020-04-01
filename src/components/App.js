@@ -6,11 +6,24 @@ import Layout from "./Layout";
 
 // pages
 import Error from "../pages/error";
-import Login from "../pages/login";
+import Login from "../pages/login/Login";
 
 // context
 import { useUserState } from "../context/UserContext";
 // import MainPage from '../pages/mainpage/mainpage';
+
+import { CSSTransition } from "react-transition-group";
+
+//Package CSS
+import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap/dist/js/bootstrap.min.js";
+import "animate.css/animate.min.css";
+
+//Template CSS Style
+import "./style.css";
+import "../assets/css/responsive.css";
+import "../assets/css/color/color-red.css";
+
 
 export default function App() {
   // global
@@ -18,7 +31,11 @@ export default function App() {
 
   return (
 
+    <CSSTransition
     
+    timeout={{ enter: 900, exit: 900 }}
+    classNames="fade"
+>
     <HashRouter>
       <Switch>
         <Route exact path="/" render={() => <Redirect to="/app/home"/>} />
@@ -33,6 +50,7 @@ export default function App() {
         <Route component={Error} />
       </Switch>
     </HashRouter>
+    </CSSTransition>
   );
 
   // #######################################################################
