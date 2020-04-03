@@ -6,7 +6,7 @@ import { withRouter } from "react-router-dom";
 import NavBar from "./components/NavBar";
 // import BannerThree from "./components/banner/BannerThree";
 import BannerOne from "./components/banner/BannerOne";
-// import BannerTwo from "./components/banner/BannerTwo";
+import BannerTwo from "./components/banner/BannerTwo";
 import Feature from "./components/Feature";
 import Services from "./components/Services";
 import WelcomeServices from "./components/WelcomeServices";
