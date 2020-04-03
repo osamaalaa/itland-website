@@ -53,7 +53,7 @@ class NavBar extends Component {
     return (
         <React.Fragment>
             {/* Start Top Header */}
-            {/* <div className="top-header">
+            <div className="top-header">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-7 col-lg-7">
@@ -76,7 +76,7 @@ class NavBar extends Component {
                         </div>
                     </div>
                 </div>
-            </div> */}
+            </div>
             {/* End Top Header */}
 
             <Navbar
@@ -89,16 +89,17 @@ class NavBar extends Component {
                 <Container>
                     <Navbar.Brand className="navbar-brand logo">
                         <React.Fragment>
-                            {/* <LinkContainer exact to="/">
-                                <img 
-                                    src={this.props.MainLogo}
-                                    alt="Logo" 
-                                />
-                            </LinkContainer> */}
+                            <LinkContainer exact to="/">
+                            <img 
+                                        className="img-fluid" 
+                                        src={this.props.MainLogo}
+                                        alt="Logo"
+                                    />
+                            </LinkContainer>
                         </React.Fragment>
                     </Navbar.Brand>
                     <Navbar.Brand className="navbar-brand logo-2"> 
-                            {/* <React.Fragment>
+                            <React.Fragment>
                                <LinkContainer exact to="/">
                                     <img 
                                         className="img-fluid" 
@@ -106,7 +107,7 @@ class NavBar extends Component {
                                         alt="Logo"
                                     />
                                 </LinkContainer>
-                            </React.Fragment> */}
+                            </React.Fragment>
                     </Navbar.Brand>
 
                     <Navbar.Toggle 
@@ -214,20 +215,20 @@ class NavBar extends Component {
                                     </Link>
                                 </Nav.Item> */}
 
-                                <Nav.Item>
-                                    <Link
-                                        activeclass="active"
-                                        to="pricing"
-                                        spy={true}
-                                        smooth={true}
-                                        offset={-20}
-                                        duration={800}
-                                        className="nav-link"
-                                        onClick={this.closeNavbar}
-                                    >
-                                        Pricing
-                                    </Link>
-                                </Nav.Item>
+                                    {/* <Nav.Item>
+                                        <Link
+                                            activeclass="active"
+                                            to="pricing"
+                                            spy={true}
+                                            smooth={true}
+                                            offset={-20}
+                                            duration={800}
+                                            className="nav-link"
+                                            onClick={this.closeNavbar}
+                                        >
+                                            Pricing
+                                        </Link>
+                                    </Nav.Item> */}
                                 {/* <Link
                                         activeclass="active"
                                         to="contact"
@@ -352,8 +353,8 @@ NavBar.propTypes = {
 
 //Default Props
 NavBar.defaultProps = {
-    MainLogo: require('../assets/img/logo.png'),
-    Logo2: require('../assets/img/logo.png'),
+    MainLogo: require('../assets/img/logos/6.png'),
+    Logo2: require('../assets/img/logos/5.png'),
     mailLink: "mailto:name@email.com",
     mail: "development@itlandgroup.com",
     numberLink: "callto:+201017372790",

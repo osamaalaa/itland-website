@@ -360,12 +360,18 @@ button {
 }
 .navbar-light.fixed-top, .search-modal, .home-video-area::before, .owl-thumb-item.active .slide-service-item, .owl-thumb-item:hover .slide-service-item {
     color: #fff;
+    
+}
+.owl-thumb-item:hover {
+    /* background-color: #f80000; */
+    color: #f80000;
 }
 .fixed-top {
     z-index: 99 !important;
 }
 .navbar-light.fixed-top, .search-modal, .home-video-area::before, .owl-thumb-item.active .slide-service-item, .owl-thumb-item:hover .slide-service-item {
     color: #fff !important;
+    background-color: #f80000;
 }
 .navbar-light .navbar-brand {
     position: absolute;
@@ -583,10 +589,12 @@ button {
     width: 100%;
     text-align: center;
     z-index: 9;
+    
 }
 .owl-thumb-item {
     display: inline-block;
     border: none;
+    background-color: #ff0000;
     max-width: 180px;
     margin: 0 15px;
     cursor: pointer;
@@ -600,15 +608,21 @@ button {
     -ms-transform: translateX(0%) rotateZ(-11deg) scale(.95);
 	transition: transform .4s ease-out;
 }
+
 .owl-thumb-item i {
     font-size: 60px;
     transition: .4s;
+    
 }
 .owl-thumb-item:hover i, .owl-thumb-item.active i {
     color: #ffffff;
+    background-color: #ff0000;
+    
 }
 .owl-thumb-item.active, .owl-thumb-item:hover {
-	transform: translateX(0) rotateZ(0) scale(.90);
+    transform: translateX(0) rotateZ(0) scale(.90);
+    background-color: #ff0000;
+    
 }
 .owl-thumb-item::before {
     display: block;
@@ -643,16 +657,19 @@ button {
 	-webkit-transition: .4s;
     border-radius: 10px;
     color: #fff;
+    background-color: #550527;
 }
 .owl-thumb-item h3 {
-    color: #616161;
+    color: #c52121;
     margin-bottom: 15px;
 }
 .owl-thumb-item.active h3, .owl-thumb-item:hover h3 {
     color: #fff;
+    background-color: #ff0000;
 }
 .owl-thumb-item.active .glyph .glyph-icon::before, .owl-thumb-item:hover .glyph .glyph-icon::before {
-	color: #fff;
+    color: #fff;
+    background-color: #ff0000;
 }
 
 /* =========================
@@ -731,7 +748,7 @@ Services Area CSS
 }
 .cta-info h2 {
 	font-weight: 600;
-	color: #272727;
+	color: #fc0b0b;
 	font-size: 32px;
     line-height: 36px;
 }
