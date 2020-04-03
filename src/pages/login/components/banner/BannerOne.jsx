@@ -9,7 +9,7 @@ class BannerOne extends Component {
     render() {
         //BannerOne loop start
         const banneronedata = this.props.banneronesData.map(
-            (bannerone, index) => (
+            (bannerone, index) => ( 
                 <div className={bannerone.BgClass} key={index}>
                     <div className="diplay-table">
                         <div className="display-table-cell">
@@ -17,7 +17,7 @@ class BannerOne extends Component {
                                 {({ isVisible }) => (
                                 <div className="container">
                                     <div className="row">
-                                        <div className="col-lg-7">
+                                        <div className="col-lg-7 col-centered">
                                             <span
                                                 className={
                                                     isVisible
@@ -46,14 +46,14 @@ class BannerOne extends Component {
                                             >
                                                 {bannerone.Content}
                                             </p>
-                                            <div className="center-wrap">
+                                            {/* <div className="center-wrap">
                                                 <Link to={bannerone.BtnLink} className="btn-a">
                                                     <div className="button">
                                                         {bannerone.BtnName}
                                                         <Icofont icon="icofont-long-arrow-right" />
                                                     <div className="mask" /></div>
                                                 </Link>
-                                            </div>
+                                            </div> */}
                                         </div>
                                     </div>
                                 </div>
@@ -82,13 +82,14 @@ class BannerOne extends Component {
                     <OwlCarousel
                         className="owl-theme homepage-slides"
                         items={1}
-                        touchDrag={false}
+                        touchDrag={true}
                         margin={0}
-                        mouseDrag={false}
+                        mouseDrag={true}
                         smartSpeed={1000}
                         dotData={true}
                         autoplay={true}
                         dotsContainer={".owl-thumbs"}
+                        loop={true}
                     >
                         {banneronedata}
                     </OwlCarousel>
@@ -112,7 +113,7 @@ BannerOne.defaultProps = {
     banneronesData: [
         {
             BgClass: "single-slider-item slide-bg-1",
-            TopTitle: "Computer Courses",
+            TopTitle: "Business English",
             Title: "Fully Responsive Design",
             Content:
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet.",
@@ -121,7 +122,7 @@ BannerOne.defaultProps = {
         },
         {
             BgClass: "single-slider-item slide-bg-2 ",
-            TopTitle: "E-Marketing",
+            TopTitle: "Computer Courses",
             Title: "Fully Responsive Design",
             Content:
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet.",
@@ -130,6 +131,33 @@ BannerOne.defaultProps = {
         },
         {
             BgClass: "single-slider-item slide-bg-3",
+            TopTitle: "English Courses",
+            Title: "Fully Responsive Design",
+            Content:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet.",
+            BtnLink:  "/#0",
+            BtnName: "get started"
+        },
+        {
+            BgClass: "single-slider-item slide-bg-4",
+            TopTitle: "English For Kids",
+            Title: "Fully Responsive Design",
+            Content:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet.",
+            BtnLink:  "/#0",
+            BtnName: "get started"
+        },
+        {
+            BgClass: "single-slider-item slide-bg-5",
+            TopTitle: "Marketing",
+            Title: "Fully Responsive Design",
+            Content:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet.",
+            BtnLink:  "/#0",
+            BtnName: "get started"
+        },
+        {
+            BgClass: "single-slider-item slide-bg-6",
             TopTitle: "Outsourcing",
             Title: "Fully Responsive Design",
             Content:
@@ -141,18 +169,33 @@ BannerOne.defaultProps = {
     thumbsData: [
         {
             ThumbIcon: "icofont-rocket-alt-1",
-            ThumbTitle: "Beautiful Designs",
-            ThumbContent: "We strive to embrace and drive change in our industry which allows us to keep our clients relevant.",
+            ThumbTitle: "Business English",
+            // ThumbContent: "We strive to embrace and drive change in our industry which allows us to keep our clients relevant.",
         },
         {
-            ThumbIcon: "icofont-box",
-            ThumbTitle: "Unique Features",
-            ThumbContent: "We strive to embrace and drive change in our industry which allows us to keep our clients relevant.",
+            ThumbIcon: "icofont-computer",
+            ThumbTitle: "Computer Courses",
+            // ThumbContent: "We strive to embrace and drive change in our industry which allows us to keep our clients relevant.",
+        },
+        {
+            ThumbIcon: "icofont-learn",
+            ThumbTitle: "English Courses",
+            // ThumbContent: "We strive to embrace and drive change in our industry which allows us to keep our clients relevant.",
+        },
+        {
+            ThumbIcon: "icofont-kid",
+            ThumbTitle: "English For Kids",
+            // ThumbContent: "We strive to embrace and drive change in our industry which allows us to keep our clients relevant.",
+        },
+        {
+            ThumbIcon: "icofont-chart-growth",
+            ThumbTitle: "Marketing Services",
+            // ThumbContent: "We strive to embrace and drive change in our industry which allows us to keep our clients relevant.",
         },
         {
             ThumbIcon: "icofont-live-support",
-            ThumbTitle: "Reliable Support",
-            ThumbContent: "We strive to embrace and drive change in our industry which allows us to keep our clients relevant.",
+            ThumbTitle: "Outsourcing Services",
+            // ThumbContent: "We strive to embrace and drive change in our industry which allows us to keep our clients relevant.",
         },
     ]
 };
