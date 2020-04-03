@@ -7,18 +7,18 @@ import Lightbox from "react-image-lightbox";
 
 
 const images = [
-    require("../assets/img/work-1.jpg"),
-    require("../assets/img/work-2.jpg"),
-    require("../assets/img/work-3.jpg"),
+    require("../../../assets/img/work-1.jpg"),
+    require("../../../assets/img/work-2.jpg"),
+    require("../../../assets/img/work-2.jpg"),
     require("../assets/img/work-4.jpg"),
     require("../assets/img/work-5.jpg"),
     require("../assets/img/work-6.jpg")
   ];
   
   const smallImages = [
-      require("../assets/img/work-1.jpg"),
-      require("../assets/img/work-2.jpg"),
-      require("../assets/img/work-3.jpg"),
+      require("../../../assets/img/work-1.jpg"),
+      require("../../../assets/img/work-2.jpg"),
+      require("../../../assets/img/work-2.jpg"),
       require("../assets/img/work-4.jpg"),
       require("../assets/img/work-5.jpg"),
       require("../assets/img/work-6.jpg")
@@ -133,7 +133,7 @@ class Works extends Component {
                                     </div>
                                 </div>
 
-                                <div className="col-md-6 col-lg-4">
+                                {/* <div className="col-md-6 col-lg-4">
                                     <div className="work-details">
                                         <figure>
                                             <img
@@ -156,9 +156,9 @@ class Works extends Component {
                                             </div>
                                         </figure>
                                     </div>
-                                </div>
+                                </div> */}
 
-                                <div className="col-md-6 col-lg-4">
+                                {/* <div className="col-md-6 col-lg-4">
                                     <div className="work-details">
                                         <figure>
                                             <img
@@ -181,9 +181,9 @@ class Works extends Component {
                                             </div>
                                         </figure>
                                     </div>
-                                </div>
+                                </div> */}
 
-                                <div className="col-md-6 col-lg-4">
+                                {/* <div className="col-md-6 col-lg-4">
                                     <div className="work-details">
                                         <figure>
                                             <img
@@ -206,7 +206,7 @@ class Works extends Component {
                                             </div>
                                         </figure>
                                     </div>
-                                </div>
+                                </div> */}
                             </MDBRow>
                         </div>
                         {isOpen && (

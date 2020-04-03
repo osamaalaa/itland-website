@@ -38,7 +38,7 @@ function Login(props) {
     {/* <BannerTwo /> */}
 
     {/* Feature: src/components/Feature.jsx */}
-    <Feature />
+    {/* <Feature /> */}
 
     {/* Services: src/components/Services.jsx */}
     <Element id='example-destination' name='example-destination'>
@@ -56,7 +56,7 @@ function Login(props) {
     {/* Team: src/components/Team.jsx */}
     <Team />
     {/* Blog: src/components/Blog.jsx */}
-    <Blog />
+    {/* <Blog /> */}
     {/* VideoArea: src/components/VideoArea.jsx */}
     <VideoArea />
     {/* Pricing: src/components/Pricing.jsx */}

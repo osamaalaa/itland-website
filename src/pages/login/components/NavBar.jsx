@@ -53,7 +53,7 @@ class NavBar extends Component {
     return (
         <React.Fragment>
             {/* Start Top Header */}
-            <div className="top-header">
+            {/* <div className="top-header">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-7 col-lg-7">
@@ -76,7 +76,7 @@ class NavBar extends Component {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
             {/* End Top Header */}
 
             <Navbar
@@ -89,16 +89,16 @@ class NavBar extends Component {
                 <Container>
                     <Navbar.Brand className="navbar-brand logo">
                         <React.Fragment>
-                            <LinkContainer exact to="/">
+                            {/* <LinkContainer exact to="/">
                                 <img 
                                     src={this.props.MainLogo}
                                     alt="Logo" 
                                 />
-                            </LinkContainer>
+                            </LinkContainer> */}
                         </React.Fragment>
                     </Navbar.Brand>
                     <Navbar.Brand className="navbar-brand logo-2"> 
-                            <React.Fragment>
+                            {/* <React.Fragment>
                                <LinkContainer exact to="/">
                                     <img 
                                         className="img-fluid" 
@@ -106,7 +106,7 @@ class NavBar extends Component {
                                         alt="Logo"
                                     />
                                 </LinkContainer>
-                            </React.Fragment>
+                            </React.Fragment> */}
                     </Navbar.Brand>
 
                     <Navbar.Toggle 
@@ -145,7 +145,7 @@ class NavBar extends Component {
                                         to="services"
                                         spy={true}
                                         smooth={true}
-                                        offset={-40} 
+                                        offset={-30} 
                                         duration={800}
                                         className="nav-link"
                                         onClick={this.closeNavbar}
@@ -175,7 +175,7 @@ class NavBar extends Component {
                                         to="about"
                                         spy={true}
                                         smooth={true}
-                                        offset={-50}
+                                        offset={-30}
                                         duration={800}
                                         className="nav-link"
                                         onClick={this.closeNavbar}
@@ -190,7 +190,7 @@ class NavBar extends Component {
                                         to="team"
                                         spy={true}
                                         smooth={true}
-                                        offset={-20}
+                                        offset={-10}
                                         duration={800}
                                         className="nav-link"
                                         onClick={this.closeNavbar}
@@ -199,7 +199,7 @@ class NavBar extends Component {
                                     </Link>
                                 </Nav.Item>
 
-                                <Nav.Item>
+                                {/* <Nav.Item>
                                     <Link
                                         activeclass="active"
                                         to="blog"
@@ -212,7 +212,7 @@ class NavBar extends Component {
                                     >
                                         Blog
                                     </Link>
-                                </Nav.Item>
+                                </Nav.Item> */}
 
                                 <Nav.Item>
                                     <Link
