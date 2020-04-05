@@ -14,13 +14,15 @@ import { useUserState } from "../context/UserContext";
 
 import { CSSTransition } from "react-transition-group";
 
+
+import Dashboard from "../pages/dashboard/Dashboard";
 //Package CSS
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import "animate.css/animate.min.css";
 
 //Template CSS Style
-import "./style.css";
+import "../assets/css/style.css";
 import "../assets/css/responsive.css";
 import "../assets/css/color/color-red.css";
 
@@ -47,6 +49,7 @@ export default function App() {
         {/* <PrivateRoute path="/app" component={Error} /> */}
         <PrivateRoute path="/app" component={Layout} />
         <PublicRoute path="/login" component={Login} />
+        <PublicRoute path="/dashboard" component={Dashboard} />
         <Route component={Error} />
       </Switch>
     </HashRouter>

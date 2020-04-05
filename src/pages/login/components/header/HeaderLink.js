@@ -73,9 +73,7 @@ export default function HeaderLinks(props)
   //==========================
 
   return (
-    <List className={classes.list}>
-    
-      <ListItem className={classes.listItem}>
+    <React.Fragment>
         <Button
           color="transparent"
           className={classes.navLink}
@@ -156,7 +154,7 @@ export default function HeaderLinks(props)
             </Fade>
           </Modal>
           {/* =====================End Model========================================================= */}
-      </ListItem>
+
 
 {/* 
       <ListItem className={classes.listItem}>
@@ -192,7 +190,8 @@ export default function HeaderLinks(props)
             <i className={classes.socialIcons + " fab fa-instagram"} />
           </Button>
         </Tooltip>
-      </ListItem> */}
-    </List>
+      </ListItem> 
+    </List> */}
+    </React.Fragment>
   );
 }

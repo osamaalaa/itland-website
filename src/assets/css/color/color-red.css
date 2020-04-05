@@ -24,7 +24,7 @@
 } 
 .navbar-light .navbar-nav > .nav-item:hover,
 .navbar-light .navbar-nav > .nav-item:active {
-	background-color: #6b6360;
+	background-color: #ff0000;
 }
 
 .owl-thumb-item i {
@@ -35,7 +35,7 @@
 }
 
 .navbar-light.fixed-top, .search-modal, .home-video-area::before, .owl-thumb-item.active, .owl-thumb-item:hover {
-    background-color: #473f40;
+    background-color: #fcf7f8;
 }
 .navbar-light.fixed-top {
     background-color: #ee0000 !important;
@@ -44,7 +44,7 @@
 	background-color: #ed1c24;
 }
 .work-details .icon li a, .team-box .title, .team-box .icon li a, .team-slides .owl-nav div {
-	color: #fe5619 !important;
+	color: #f80000 !important;
 }
 .team-box .icon li a:hover {
 	background: #ed1c24;

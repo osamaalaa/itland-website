@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Icofont from 'react-icofont';
-import { NavLink } from "react-router-dom";
+import { NavLink } from "reactstrap";
 import { Link } from "react-scroll";
 import { LinkContainer } from "react-router-bootstrap";
 import { Navbar, Container, Nav } from "react-bootstrap";
@@ -53,7 +53,7 @@ class NavBar extends Component {
     return (
         <React.Fragment>
             {/* Start Top Header */}
-            <div className="top-header">
+            {/* <div className="top-header">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-7 col-lg-7">
@@ -76,7 +76,7 @@ class NavBar extends Component {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
             {/* End Top Header */}
 
             <Navbar
@@ -91,9 +91,12 @@ class NavBar extends Component {
                         <React.Fragment>
                             <LinkContainer exact to="/">
                             <img 
-                                        className="img-fluid" 
+                                        className="img-fluid img-one" 
                                         src={this.props.MainLogo}
                                         alt="Logo"
+                                       
+
+                                        
                                     />
                             </LinkContainer>
                         </React.Fragment>
@@ -102,7 +105,7 @@ class NavBar extends Component {
                             <React.Fragment>
                                <LinkContainer exact to="/">
                                     <img 
-                                        className="img-fluid" 
+                                        className="img-fluid img-two" 
                                         src={this.props.Logo2}
                                         alt="Logo"
                                     />
@@ -146,7 +149,7 @@ class NavBar extends Component {
                                         to="services"
                                         spy={true}
                                         smooth={true}
-                                        offset={-30} 
+                                        offset={-40} 
                                         duration={800}
                                         className="nav-link"
                                         onClick={this.closeNavbar}
@@ -191,7 +194,7 @@ class NavBar extends Component {
                                         to="team"
                                         spy={true}
                                         smooth={true}
-                                        offset={-10}
+                                        offset={-40}
                                         duration={800}
                                         className="nav-link"
                                         onClick={this.closeNavbar}
@@ -200,20 +203,7 @@ class NavBar extends Component {
                                     </Link>
                                 </Nav.Item>
 
-                                {/* <Nav.Item>
-                                    <Link
-                                        activeclass="active"
-                                        to="blog"
-                                        spy={true}
-                                        smooth={true}
-                                        offset={-200}
-                                        duration={800}
-                                        className="nav-link"
-                                        onClick={this.closeNavbar}
-                                    >
-                                        Blog
-                                    </Link>
-                                </Nav.Item> */}
+                               
 
                                     {/* <Nav.Item>
                                         <Link
@@ -229,22 +219,43 @@ class NavBar extends Component {
                                             Pricing
                                         </Link>
                                     </Nav.Item> */}
-                                {/* <Link
-                                        activeclass="active"
-                                        to="contact"
-                                        spy={true}
-                                        smooth={true}
-                                        offset={-200}
-                                        duration={800}
-                                        className="nav-link"
-                                        onClick={this.closeNavbar}
-                                    >
-                                        Login
-                                    </Link> */}
-                                <Nav.Item>
+                                    <Nav.Item>
+                                        {/* <Link
+                                                activeclass="active"
+                                                to="contact"
+                                                spy={true}
+                                                smooth={true}
+                                                offset={-200}
+                                                duration={800}
+                                                className="nav-link"
+                                                onClick={this.closeNavbar}
+                                            >
+                                                Login
+                                            </Link> */}
+                                            <HeaderLink />
+                                    </Nav.Item>
+
+                                    <Nav.Item>
+                                         <NavLink href="https://www.facebook.com/itlandservices/" target="_blank" className="nav-link"><Icofont icon="icofont-facebook"/></NavLink>
+
+
+                                    </Nav.Item>
+                                    <Nav.Item>
+                                    <NavLink href="https://www.facebook.com/itlandservices/" target="_blank" className="nav-link"><Icofont icon="icofont-instagram"/></NavLink>
+
+
+                                    </Nav.Item>
+                                    <Nav.Item>
+                                    <NavLink href="https://www.facebook.com/itlandservices/" target="_blank" className="nav-link"><Icofont icon="icofont-linkedin"/></NavLink>
+
+
+                                    </Nav.Item>
+
+                                {/* <Nav.Item >
                                     <HeaderLink />
                                     
-                                </Nav.Item>
+                                </Nav.Item> */}
+                                
                             </React.Fragment>
                         ) : (
                             <React.Fragment>
@@ -359,8 +370,9 @@ NavBar.defaultProps = {
     mail: "development@itlandgroup.com",
     numberLink: "callto:+201017372790",
     Number: "+201017372790",
-    facebookLink: "//facebook.com/envato",
+    facebookLink: "https://reactstrap.github.io/components/modals/",
     twitterLink: "//twitter.com/envato",
     instagramLink: "//instagram.com/envato/",
+    
 };
 export default NavBar;

@@ -34,7 +34,6 @@ class Team extends Component {
                         <ScrollAnimation animateIn="fadeInUp">
                             <div className="section-title">
                                 <h2>{this.props.sectionTitle}</h2>
-                                <p>{this.props.sectionDescription}</p>
                                 <span className="section-title-bg">{this.props.SectionbgTitle}</span>
                             </div>
                         </ScrollAnimation>
@@ -89,19 +88,17 @@ Team.propTypes = {
 Team.defaultProps = {
     SectionbgTitle: "Team",
     sectionTitle: "Our Team",
-    sectionDescription:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet.",
         teamsData: [
         {
-            Image: require("../assets/img/osama.jpg"),
+            Image: require("../../../assets/img/osama.jpg"),
             Name: "Osama Alaa",
-            Profession: "Web Developer",
+            Profession: "Software Developer",
             facebookLink: "/#0",
             linkedinLink: "/#0",
             twitterLink: "/#0",
         },
         {
-            Image: require("../assets/img/osama.jpg"),
+            Image: require("../../../assets/img/osama.jpg"),
             Name: "Osama Alaa",
             Profession: "Designer",
             facebookLink: "/#0",
@@ -109,9 +106,9 @@ Team.defaultProps = {
             twitterLink: "/#0",
         },
         {
-            Image: require("../assets/img/team-three.jpg"),
-            Name: "Oliver",
-            Profession: "Photographer",
+            Image: require("../../../assets/img/marihan.jpg"),
+            Name: "Marihan",
+            Profession: "Graphic Designer",
             facebookLink: "/#0",
             linkedinLink: "/#0",
             twitterLink: "/#0",
