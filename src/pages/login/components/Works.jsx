@@ -243,8 +243,8 @@ Works.propTypes = {
 
 //Default Props
 Works.defaultProps = {
-    SectionbgTitle: "works",
-    sectionTitle: "works",
+    SectionbgTitle: "Works",
+    sectionTitle: "Our Works",
     sectionDescription:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet.",
 };

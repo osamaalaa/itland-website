@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from "prop-types";
 import "react-modal-video/css/modal-video.min.css";
 import ModalVideo from "react-modal-video";
-
+import ScrollAnimation from "react-animate-on-scroll";
 class VideoArea extends Component {
     constructor() {
         super();
@@ -19,9 +19,12 @@ class VideoArea extends Component {
       
     return (
         <React.Fragment>
-            <section className="video-area video-bg">
+            <section id="video-area" className="video-area video-bg">
+                
                 <div className="diplay-table">
+
                     <div className="display-table-cell">
+                    
                         <div className="video-inner-content">
                             <div className="button__holder">
                                 <ModalVideo
@@ -55,7 +58,7 @@ VideoArea.propTypes= {
     Content: PropTypes.string,
 }
 VideoArea.defaultProps = {
-    Title: "Watch Video",
+    Title: "About US",
     Content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fermentum sagittis nulla, non vehicula mauris rutrum vitae. Sed non consequat dolor",
 }
 export default VideoArea;

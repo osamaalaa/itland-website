@@ -6,6 +6,17 @@ import "react-modal-video/css/modal-video.min.css";
 import ModalVideo from "react-modal-video";
 
 class About extends Component {
+    componentDidMount() {
+        let scrollWithOffset = (el, offset) => {
+            const elementPosition = el.offsetTop - offset;
+            window.scroll({
+                top: elementPosition,
+                left: 0,
+                behavior: "smooth"
+            });
+        };
+        this.setState({ scrollWithOffset });
+    }
     constructor() {
         super();
         this.state = {
@@ -30,7 +41,7 @@ class About extends Component {
         //About loop END
         return (
             <React.Fragment>
-            <section className="video-area video-bg">
+            {/* <section className="video-area video-bg">
                 <div className="diplay-table">
                     <div className="display-table-cell">
                         <div className="video-inner-content">
@@ -56,7 +67,7 @@ class About extends Component {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
         </React.Fragment>
     );
   }

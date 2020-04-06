@@ -15,16 +15,18 @@ class Team extends Component {
                 <div className="box-inner-content">
                     <h3 className="title">{team.Name}</h3>
                     <span className="post">{team.Profession}</span>
-                    <ul className="icon">
+                    
+                    {/* <ul className="icon">
                         <li><Link to={team.facebookLink}><Icofont icon="icofont-facebook" /></Link></li>
                         <li><Link to={team.linkedinLink}><Icofont icon="icofont-linkedin" /></Link></li>
                         <li><Link to={team.twitterLink}><Icofont icon="icofont-twitter" /></Link></li>
-                    </ul>
+                    </ul> */}
+                    <p>itland itland itland itland</p>
                 </div>
             </div>
         </div>
     ));
-    //Team loop END
+    //Team loop END 
     return (
         <React.Fragment>
              <section id="team" className="our-team ptb-100">
@@ -98,7 +100,7 @@ Team.defaultProps = {
             twitterLink: "/#0",
         },
         {
-            Image: require("../../../assets/img/osama.jpg"),
+            Image: require("../assets/img/team-two.jpg"),
             Name: "Osama Alaa",
             Profession: "Software Developer",
             facebookLink: "/#0",
@@ -106,7 +108,7 @@ Team.defaultProps = {
             twitterLink: "/#0",
         },
         {
-            Image: require("../../../assets/img/osama.jpg"),
+            Image: require("../assets/img/team-two.jpg"),
             Name: "Osama Alaa",
             Profession: "Software Developer",
             facebookLink: "/#0",
@@ -114,7 +116,7 @@ Team.defaultProps = {
             twitterLink: "/#0",
         },
         {
-            Image: require("../../../assets/img/osama.jpg"),
+            Image: require("../assets/img/team-two.jpg"),
             Name: "Osama Alaa",
             Profession: "Software Developer",
             facebookLink: "/#0",
@@ -122,7 +124,7 @@ Team.defaultProps = {
             twitterLink: "/#0",
         },
         {
-            Image: require("../../../assets/img/osama.jpg"),
+            Image: require("../assets/img/team-two.jpg"),
             Name: "Osama Alaa",
             Profession: "Software Developer",
             facebookLink: "/#0",
@@ -130,7 +132,7 @@ Team.defaultProps = {
             twitterLink: "/#0",
         },
         {
-            Image: require("../../../assets/img/osama.jpg"),
+            Image: require("../assets/img/team-two.jpg"),
             Name: "Osama Alaa",
             Profession: "Designer",
             facebookLink: "/#0",

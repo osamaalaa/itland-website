@@ -175,7 +175,7 @@ BannerOne.defaultProps = {
         },
         {
             ThumbIcon: "icofont-chart-growth",
-            ThumbTitle: "Online Marketing Services",
+            ThumbTitle: "Marketing Services",
            
             // ThumbContent: "We strive to embrace and drive change in our industry which allows us to keep our clients relevant.",
         },

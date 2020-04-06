@@ -17,7 +17,7 @@ class Partners extends Component {
         //Partner loop END
         return (
             <React.Fragment>
-                <section className="our-partners ptb-100">
+                <section id ="partners" className="our-partners ptb-100">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-8 offset-lg-2 text-center">
@@ -74,32 +74,32 @@ Partners.propTypes = {
 
 //Default Props
 Partners.defaultProps = {
-    SectionbgTitle: "Partners",
-    sectionTitle: "Our Partners",
+    SectionbgTitle: "Investors",
+    sectionTitle: "Our Investors",
     sectionDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet.",
     partnersData: [
         {
-            partnerLogo: require("../assets/img/partners-logo/img1.png"),
+            partnerLogo: require("../../../assets/img/partners-logo/1.png"),
             partnerLink: "/#0"
         },
         {
-            partnerLogo: require("../assets/img/partners-logo/img2.png"),
+            partnerLogo: require("../../../assets/img/partners-logo/2.png"),
             partnerLink: "/#0"
         },
         {
-            partnerLogo: require("../assets/img/partners-logo/img3.png"),
+            partnerLogo: require("../../../assets/img/partners-logo/3.png"),
             partnerLink: "/#0"
         },
         {
-            partnerLogo: require("../assets/img/partners-logo/img4.png"),
+            partnerLogo: require("../../../assets/img/partners-logo/2.png"),
             partnerLink: "/#0"
         },
         {
-            partnerLogo: require("../assets/img/partners-logo/img5.png"),
+            partnerLogo: require("../../../assets/img/partners-logo/1.png"),
             partnerLink: "/#0"
         },
         {
-            partnerLogo: require("../assets/img/partners-logo/img3.png"),
+            partnerLogo: require("../../../assets/img/partners-logo/2.png"),
             partnerLink: "/#0"
         }
     ]
