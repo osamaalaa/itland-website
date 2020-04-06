@@ -60,40 +60,40 @@ Services.defaultProps = {
 
     servicesData: [
         {
-            icon: "icofont-automation",
-            heading: "Creative Solutions",
+            icon: "icofont-live-support",
+            heading: "Outsourcing Services",
             description:
-                "We strive to embrace and drive change in our industry which allows us to keep our clients relevant."
-        },
-        {
-            icon: "icofont-bullseye",
-            heading: "Excellent Features",
-            description:
-                "We strive to embrace and drive change in our industry which allows us to keep our clients relevant."
-        },
-        {
-            icon: "icofont-woman-in-glasses",
-            heading: "Friendly Support",
-            description:
-                "We strive to embrace and drive change in our industry which allows us to keep our clients relevant."
+                "Get closer to your customers. So close that you tell them what they need well before They realize it themselves."
         },
         {
             icon: "icofont-chart-growth",
-            heading: "SEO & Advertising",
+            heading: "Online Marketing Services",
             description:
-                "We strive to embrace and drive change in our industry which allows us to keep our clients relevant."
+                "Websites promote you 24/7 No employee will do that.                                                             "
         },
         {
-            icon: "icofont-network-tower",
-            heading: "Marketing & Consulting",
+            icon: "icofont-computer",
+            heading: "Computer Courses",
             description:
-                "We strive to embrace and drive change in our industry which allows us to keep our clients relevant."
+                "Web development-Mobile development -online Marketing                                                             "
         },
         {
-            icon: "icofont-laptop-alt",
-            heading: "Design & Development",
+            icon: "icofont-learn",
+            heading: "English Courses",
             description:
-                "We strive to embrace and drive change in our industry which allows us to keep our clients relevant."
+                "Improve fluency through practice and speaking drills-expanding vocabulary usage through class work and activities "
+        },
+        {
+            icon: "icofont-rocket-alt-1",
+            heading: "Business English",
+            description:
+                "Giving a successful presentation-business etiquette-job interviews-business slang and abbreviations               "
+        },
+        {
+            icon: "icofont-kid",
+            heading: "English For Kids",
+            description:
+                "Academic enrichment- recreational activities-intensive school work  help                                           "
         },
     ]
 };

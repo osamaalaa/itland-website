@@ -16,6 +16,7 @@ class VideoArea extends Component {
     }
 
   render() {
+      
     return (
         <React.Fragment>
             <section className="video-area video-bg">

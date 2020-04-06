@@ -77,7 +77,7 @@ h2 {
     font-size: 36px;
 }
 h3 {
-    color: #fff7f7;
+    color: #f10a0a;
     font-size: 22px;
     font-weight: 500;
 }
@@ -710,7 +710,7 @@ Services Area CSS
     margin-top: 130px;
 }
 .service-item {
-	background-color: #f5f8f9;
+    background-color: #f5f8f9;
     padding: 25px;
     margin-top: 30px;
     transition: .5s;

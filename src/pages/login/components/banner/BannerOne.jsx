@@ -113,7 +113,7 @@ BannerOne.defaultProps = {
     banneronesData: [
         {
             BgClass: "single-slider-item slide-bg-1",
-            TopTitle: "Business English",
+            TopTitle: "OutSourcing Services",
             Title: "Fully Responsive Design",
             Content:
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet.",
@@ -122,7 +122,7 @@ BannerOne.defaultProps = {
         },
         {
             BgClass: "single-slider-item slide-bg-2 ",
-            TopTitle: "Computer Courses",
+            TopTitle: "Online Marketing services",
             Title: "Fully Responsive Design",
             Content:
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet.",
@@ -131,7 +131,7 @@ BannerOne.defaultProps = {
         },
         {
             BgClass: "single-slider-item slide-bg-3",
-            TopTitle: "English Courses",
+            TopTitle: "Computer courses",
             Title: "Fully Responsive Design",
             Content:
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet.",
@@ -140,7 +140,7 @@ BannerOne.defaultProps = {
         },
         {
             BgClass: "single-slider-item slide-bg-4",
-            TopTitle: "English For Kids",
+            TopTitle: "English courses",
             Title: "Fully Responsive Design",
             Content:
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet.",
@@ -149,7 +149,7 @@ BannerOne.defaultProps = {
         },
         {
             BgClass: "single-slider-item slide-bg-5",
-            TopTitle: "Marketing",
+            TopTitle: "Business English",
             Title: "Fully Responsive Design",
             Content:
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet.",
@@ -158,7 +158,7 @@ BannerOne.defaultProps = {
         },
         {
             BgClass: "single-slider-item slide-bg-6",
-            TopTitle: "Outsourcing",
+            TopTitle: "English for kids",
             Title: "Fully Responsive Design",
             Content:
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet.",
@@ -168,33 +168,37 @@ BannerOne.defaultProps = {
     ],
     thumbsData: [
         {
-            ThumbIcon: "icofont-rocket-alt-1",
-            ThumbTitle: "Business English",
+            ThumbIcon: "icofont-live-support",
+            ThumbTitle: "Outsourcing Services",
+            
+            // ThumbContent: "We strive to embrace and drive change in our industry which allows us to keep our clients relevant.",
+        },
+        {
+            ThumbIcon: "icofont-chart-growth",
+            ThumbTitle: "Online Marketing Services",
+           
             // ThumbContent: "We strive to embrace and drive change in our industry which allows us to keep our clients relevant.",
         },
         {
             ThumbIcon: "icofont-computer",
             ThumbTitle: "Computer Courses",
+           
             // ThumbContent: "We strive to embrace and drive change in our industry which allows us to keep our clients relevant.",
         },
         {
             ThumbIcon: "icofont-learn",
             ThumbTitle: "English Courses",
+            
+            // ThumbContent: "We strive to embrace and drive change in our industry which allows us to keep our clients relevant.",
+        },
+        {
+            ThumbIcon: "icofont-rocket-alt-1",
+            ThumbTitle: "Business English",
             // ThumbContent: "We strive to embrace and drive change in our industry which allows us to keep our clients relevant.",
         },
         {
             ThumbIcon: "icofont-kid",
             ThumbTitle: "English For Kids",
-            // ThumbContent: "We strive to embrace and drive change in our industry which allows us to keep our clients relevant.",
-        },
-        {
-            ThumbIcon: "icofont-chart-growth",
-            ThumbTitle: "Marketing Services",
-            // ThumbContent: "We strive to embrace and drive change in our industry which allows us to keep our clients relevant.",
-        },
-        {
-            ThumbIcon: "icofont-live-support",
-            ThumbTitle: "Outsourcing Services",
             // ThumbContent: "We strive to embrace and drive change in our industry which allows us to keep our clients relevant.",
         },
     ]

@@ -176,6 +176,22 @@ class NavBar extends Component {
                                 <Nav.Item>
                                     <Link
                                         activeclass="active"
+                                        to="works"
+                                        spy={true}
+                                        smooth={true}
+                                        offset={-40}
+                                        duration={800}
+                                        className="nav-link"
+                                        onClick={this.closeNavbar}
+                                    >
+                                        Investors
+                                    </Link>
+                                </Nav.Item>
+
+
+                                <Nav.Item>
+                                    <Link
+                                        activeclass="active"
                                         to="about"
                                         spy={true}
                                         smooth={true}
@@ -184,7 +200,7 @@ class NavBar extends Component {
                                         className="nav-link"
                                         onClick={this.closeNavbar}
                                     >
-                                        About
+                                        About us
                                     </Link>
                                 </Nav.Item>
 
@@ -200,6 +216,21 @@ class NavBar extends Component {
                                         onClick={this.closeNavbar}
                                     >
                                         Team
+                                    </Link>
+                                </Nav.Item>
+
+                                <Nav.Item>
+                                    <Link
+                                        activeclass="active"
+                                        to="Contact"
+                                        spy={true}
+                                        smooth={true}
+                                        offset={-40}
+                                        duration={800}
+                                        className="nav-link"
+                                        onClick={this.closeNavbar}
+                                    >
+                                        Contact us
                                     </Link>
                                 </Nav.Item>
 
