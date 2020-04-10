@@ -233,25 +233,7 @@ class NavBar extends Component {
                                         Contact us
                                     </Link>
                                 </Nav.Item>
-
-                               
-
-                                
-                                    <Nav.Item>
-                                        {/* <Link
-                                                activeclass="active"
-                                                to="contact"
-                                                spy={true}
-                                                smooth={true}
-                                                offset={-200}
-                                                duration={800}
-                                                className="nav-link"
-                                                onClick={this.closeNavbar}
-                                            >
-                                                Login
-                                            </Link> */}
-                                            <HeaderLink />
-                                    </Nav.Item>
+                                   
 
                                     <Nav.Item>
                                          <NavLink href="https://www.facebook.com/itlandservices/" target="_blank" className="nav-link"><Icofont icon="icofont-facebook"/></NavLink>
@@ -269,10 +251,52 @@ class NavBar extends Component {
 
                                     </Nav.Item>
 
+                                    <Nav.Item>
+                                    {/* <NavLink href="https://www.facebook.com/itlandservices/" target="_blank" className="nav-link"><Icofont icon="icofont-instagram"/></NavLink> */}
+
+
+                                    </Nav.Item>
+                                    
+                                <Nav.Item>
+                                    <Link
+                                        // activeclass="active"
+                                     
+                                        spy={true}
+                                        smooth={true}
+                                        offset={-40}
+                                        duration={800}
+                                        className="nav-link"
+                                       
+                                    >
+                                        
+                                    </Link>
+                                </Nav.Item>
+                                <Nav.Item>
+                                    <Link
+                                        // activeclass="active"
+                                     
+                                        spy={true}
+                                        smooth={true}
+                                        offset={-40}
+                                        duration={800}
+                                        className="nav-link"
+                                       
+                                    >
+                                        
+                                    </Link>
+                                </Nav.Item>
+                                   
+                            
+                                    <Nav.Item>
+                                            <HeaderLink />
+                                    </Nav.Item>
+
                                 {/* <Nav.Item >
                                     <HeaderLink />
                                     
                                 </Nav.Item> */}
+
+
                                 
                             </React.Fragment>
                         ) : (

@@ -24,7 +24,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 import { Element } from 'react-scroll'
-
+// import Employee from './employeePage';
 function Login(props) { 
 
   return (
@@ -81,9 +81,10 @@ function Login(props) {
     <Testimonials />
     {/* FAQ: src/components/FAQ.jsx */}
     <FAQ />
-   
+      
     {/* Team: src/components/Team.jsx */}
     <Team />
+    {/* <Employee /> */}
     {/* Contact: src/components/Contact.jsx */}
     <Contact />
     {/* Footer: src/components/Footer.jsx */}

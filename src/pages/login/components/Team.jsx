@@ -5,6 +5,12 @@ import { Link } from 'react-router-dom';
 import OwlCarousel from "react-owl-carousel3";
 import ScrollAnimation from 'react-animate-on-scroll';
 
+import osama from "../../../assets/img/osama.jpg";
+import marihan from "../../../assets/img/marihan.jpg";
+import lotfe from "../../../assets/img/lotfe.jpg";
+import aya from "../../../assets/img/aya.jpg";
+import asya from "../../../assets/img/asya.jpg";
+import mohamed from "../../../assets/img/mohamedibrahim.jpg";
 class Team extends Component {
   render() {
     //Team loop start
@@ -30,7 +36,13 @@ class Team extends Component {
     return (
         <React.Fragment>
              <section id="team" className="our-team ptb-100">
-            <div className="container">
+                    <div className="col-lg-8 offset-lg-2 text-center">
+                            <div className="section-title">
+                                        <h2>{this.props.sectionTitle}</h2>
+                                        <span className="section-title-bg">{this.props.SectionbgTitle}</span>
+                                    </div>
+                        </div>
+            {/* <div className="container">
                 <div className="row">
                     <div className="col-lg-8 offset-lg-2 text-center">
                         <ScrollAnimation animateIn="fadeInUp">
@@ -72,7 +84,87 @@ class Team extends Component {
                         {teamdata}
                     </OwlCarousel>
                 </div>
-            </div>
+            </div> */}
+
+    <div class="box">
+      <div class="card">
+        <div class="imgBx">
+            <img src={mohamed} alt="images" />
+        </div>
+        <div class="details">
+            <h2>Mohamed Ibrahim<span>Founder & Director</span></h2>
+        </div>
+      </div>
+    
+       <div class="card">
+         <div class="imgBx">
+            <img src={osama} alt="images" />
+         </div>
+         <div class="details">
+            <h2>Marihan<span>Software Developer</span></h2>
+          </div>
+       </div>
+
+       <div class="card">
+         <div class="imgBx">
+            <img src={marihan} alt="images" />
+         </div>
+         <div class="details">
+            <h2>Marihan<span>Software Developer</span></h2>
+          </div>
+       </div>
+       <div class="card">
+         <div class="imgBx">
+            <img src={asya} alt="images" />
+         </div>
+         <div class="details">
+            <h2>Asya Heikal<span>Sales Specialist</span></h2>
+          </div>
+       </div>
+       <div class="card">
+         <div class="imgBx">
+            <img src={marihan} alt="images" />
+         </div>
+         <div class="details">
+            <h2>Marihan Adel<span>Graphic Designer</span></h2>
+          </div>
+       </div>
+       <div class="card">
+         <div class="imgBx">
+            <img src={osama} alt="images" />
+         </div>
+         <div class="details">
+            <h2>Osama Alaa<span>Software Developer</span></h2>
+          </div>
+       </div>
+       <div class="card">
+         <div class="imgBx">
+            <img src={aya} alt="images" />
+         </div>
+         <div class="details">
+            <h2>Aya Nawar<span>Software Developer</span></h2>
+          </div>
+       </div>
+       <div class="card">
+         <div class="imgBx">
+            <img src={lotfe} alt="images" />
+         </div>
+         <div class="details">
+            <h2>Mohamed Lotfe<span>Marketing Specialist</span></h2>
+          </div>
+       </div>
+
+
+
+ 
+     </div>
+            
+
+            
+
+
+
+
         </section>   
         </React.Fragment>
     );

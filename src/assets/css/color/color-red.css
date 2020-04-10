@@ -3,136 +3,136 @@
  */ 
 
  h2, a:focus {
-    color: #ed1c24;
+    color: #b33541;
 }
 .button, .center-wrap button button {
-	border: 1px solid #ed1c24;
-    background-color: #ed1c24;
+	border: 1px solid #b33541;
+    background-color: #b33541;
 }
 .plan .button:hover {
-	border-color: #ed1c24;
+	border-color: #b33541;
 }
 .plan .button a, .glyph i {
-	color: #ed1c24;
+	color: #b33541;
 }
 
 .plan.featured .button {
-	background-color: #ed1c24;
+	background-color: #b33541;
 }
 .social-icons ul li a:hover {
-	background-color: #ed1c24;
+	background-color: #b33541;
 } 
 .navbar-light .navbar-nav > .nav-item:hover,
 .navbar-light .navbar-nav > .nav-item:active {
-	background-color: #ff0000;
+	background-color: #b33541;
 }
 
 .owl-thumb-item i {
-    color: #ed1c24;
+    color: #b33541;
 }
 .navbar-light .navbar-nav .nav-link.active{
-	background-color: #ee0000 !important;
+	background-color: #b33541 !important;
 }
 
 .navbar-light.fixed-top, .search-modal, .home-video-area::before, .owl-thumb-item.active, .owl-thumb-item:hover {
     background-color: #fcf7f8;
 }
 .navbar-light.fixed-top {
-    background-color: #ee0000 !important;
+    background-color: #b33541 !important;
 }
 .filter-menu button.programs-filter-btn-active, .filter-menu button:hover {
-	background-color: #ed1c24;
+	background-color: #b33541;
 }
 .work-details .icon li a, .team-box .title, .team-box .icon li a, .team-slides .owl-nav div {
-	color: #f80000 !important;
+	color: #b33541 !important;
 }
 .team-box .icon li a:hover {
-	background: #ed1c24;
+	background: #b33541;
 }
 .date-box {
-	background-color: #ed1c24;
+	background-color: #b33541;
 }
 .blog-item:hover .title-meta h2 a {
-    color: #ed1c24;
+    color: #b33541;
 }
 .post-meta ul li a:hover {
-	color: #ed1c24;
+	color: #b33541;
   }
   .pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover {
-	background-color: #ed1c24;
-	border-color: #ed1c24;
+	background-color: #b33541;
+	border-color: #b33541;
 }
 .side-widget h3::before { 
-	background: #ed1c24;
+	background: #b33541;
 }
 .search-form .btn-default {
-	border-color: #ed1c24;
-	background: #ed1c24;
+	border-color: #b33541;
+	background: #b33541;
 }
 .side-widget .list-group li a:hover {
-	color: #ed1c24;
+	color: #b33541;
 }
 .single-post h4 a:hover {
-	color: #ed1c24;
+	color: #b33541;
 }
 .list-tags li a:hover {
-    background-color: #ed1c24;
+    background-color: #b33541;
 }
 .sharing-link ul li i:hover {
-    background-color: #ed1c24;
+    background-color: #b33541;
 }
 .content-box:hover .box-icon-effect-1a .box-icon i {
-    color: #ed1c24;
+    color: #b33541;
 }
 .work-details .box-content{
-	background: #ed1c24;
+	background: #b33541;
 }
 .comments-title::before {
-	background: #ed1c24;
+	background: #b33541;
 }
 .single-comment .reply:hover {
-	background-color: #ed1c24;
+	background-color: #b33541;
 }
 .video-area:before {
-	background: #ed1c24;
+	background: #b33541;
 }
 .plus, .post-meta ul li .fa {
-	color: #ed1c24;
+	color: #b33541;
 } 
 .plus:hover {
-	color: #ed1c24;
+	color: #b33541;
 }
 .tab-menu ul li.active a {
-	background-color: #ed1c24;
+	background-color: #b33541;
 }
 .plan.featured .listing-badges .featured {
-	color: #ed1c24;
+	color: #b33541;
 }
 .plan.featured .plan-price, .content-box.color-effect-1, .footer  {
-	background-color: #ed1c24;
+	background-color: #b33541;
 }
 .single-testimonial-item i, .partners-slides .owl-nav div {
-    color: #fe5619 !important;
+    color: #b33541 !important;
 }
 .client-info h3, .testimonial-slides .owl-nav div {
-	color: #fe5619 !important;
+	color: #b33541 !important;
  }
  .panel-title a:before, .panel-title a.collapsed:before {
-	color: #ed1c24;
-	border: 1px solid #ed1c24;
+	color: #b33541;
+	border: 1px solid #b33541;
 }
 .social-icons.bottom ul li a {
-	background-color: #9e3610;
+	background-color: #b33541;
 }
 .social-icons.bottom ul li a:hover {
-    color: #9e3610;
+    color: #b33541;
 }
 .about-info i {
-    color:#ed1c24;
+    color:#b33541;
 }
 .about-info:hover {
-    background-color: #ed1c24;
+    background-color: #b33541;
 }
 .plan .btn-a {
-    color: #ed1c24;
+    color: #b33541;
 }

@@ -58,13 +58,13 @@ Testimonials.propTypes = {
 Testimonials.defaultProps = { 
     testimonialsData: [
         {
-            clientImage: require("../assets/img/client-one.png"),
-            Content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fermentum sagittis nulla, non vehicula mauris rutrum vitae. Sed non consequat dolor. Cras in odio augue.",
-            Name: "Jason Statham",
+            clientImage: require("../../../assets/img/mohamed_logo.jpg"),
+            Content: "If You Dont Look you Wont see",
+            Name: "Mohamed Ibrahim",
             Profession: "Founder & Director",
         },
         {
-            clientImage: require("../assets/img/client-one.png"),
+            clientImage: require("../../../assets/img/mohamed_logo.jpg"),
             Content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fermentum sagittis nulla, non vehicula mauris rutrum vitae. Sed non consequat dolor. Cras in odio augue.",
             Name: "Jason Statham",
             Profession: "Founder & Director",

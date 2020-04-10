@@ -121,7 +121,7 @@ BannerOne.defaultProps = {
             BtnName: "get started"
         },
         {
-            BgClass: "single-slider-item slide-bg-2 ",
+            BgClass: "single-slider-item slide-bg-2",
             TopTitle: "Online Marketing services",
             Title: "Fully Responsive Design",
             Content:
@@ -148,7 +148,7 @@ BannerOne.defaultProps = {
             BtnName: "get started"
         },
         {
-            BgClass: "single-slider-item slide-bg-5",
+            BgClass: "single-slider-item slide-bg-1",
             TopTitle: "Business English",
             Title: "Fully Responsive Design",
             Content:
@@ -157,7 +157,7 @@ BannerOne.defaultProps = {
             BtnName: "get started"
         },
         {
-            BgClass: "single-slider-item slide-bg-6",
+            BgClass: "single-slider-item slide-bg-4",
             TopTitle: "English for kids",
             Title: "Fully Responsive Design",
             Content:

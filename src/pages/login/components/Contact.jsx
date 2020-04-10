@@ -223,7 +223,7 @@ Contact.propTypes = {
 //Default Props
 Contact.defaultProps = {
     SectionbgTitle: "Contact",
-    sectionTitle: "Our Contact",
+    sectionTitle: "Contact US",
     sectionDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet.",
     AddTitle: "Address",
     Address: "2750 Quadra Street Victoria, Canada.",
