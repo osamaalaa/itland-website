@@ -2,7 +2,7 @@ import React from 'react';
 import { withRouter } from "react-router-dom";
 //Import Component
 import NavBar from "./components/NavBar";
-// import BannerThree from "./components/banner/BannerThree";
+import BannerThree from "./components/banner/BannerThree";
 import BannerOne from "./components/banner/BannerOne";
 // import BannerTwo from "./components/banner/BannerTwo";
 // import Feature from "./components/Feature";
@@ -30,6 +30,7 @@ function Login(props) {
      <NavBar pageName="home" /> 
     <BannerOne />
     {/* <BannerTwo /> */}
+    {/* <BannerThree /> */}
 
     {/* Feature: src/components/Feature.jsx */}
     {/* <Feature /> */}

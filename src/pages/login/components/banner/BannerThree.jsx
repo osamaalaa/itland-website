@@ -3,7 +3,7 @@ import Icofont from 'react-icofont';
 import { Link } from 'react-router-dom';
 import PropTypes from "prop-types";
 // import videoaya from "../../assets/video.wmv"
-import img from "../../../../assets/img/slidebar1.jpg";
+import img from "../../../../assets/img/video-bg.jpg";
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 class BannerThree extends Component {
@@ -11,9 +11,9 @@ class BannerThree extends Component {
         return (
             <React.Fragment>
                 <div id="home" className="home-video-area">
-                {/* <video id="bgvid" loop autoPlay muted>
+                <video id="bgvid" loop autoPlay muted>
                     <source src="http://taxify.co/wp-content/uploads/2014/06/file.mp4" type="video/mp4" />
-                </video> */}
+                </video>
                  
             <div class="carousel-wrapper">
             <Carousel showArrows={true} showIndicators={false} showThumbs={false} showStatus={false} autoPlay={true} >

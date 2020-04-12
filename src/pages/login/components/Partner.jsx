@@ -21,6 +21,7 @@ class Partners extends Component {
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-8 offset-lg-2 text-center">
+                               
                                 <ScrollAnimation animateIn="fadeInUp">
                                     <div className="section-title">
                                         <h2>{this.props.sectionTitle}</h2>
@@ -29,6 +30,7 @@ class Partners extends Component {
                                     </div>
                                 </ScrollAnimation>
                             </div>
+                            
                         </div>
 
                         <div className="row">
@@ -57,6 +59,8 @@ class Partners extends Component {
                                 {partnerData}
                             </OwlCarousel>
                         </div>
+                        <div Style="padding:100px;">
+                            </div>
                     </div>
                 </section>
             </React.Fragment>

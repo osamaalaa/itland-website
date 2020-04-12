@@ -85,14 +85,17 @@ class BannerOne extends Component {
                         touchDrag={true}
                         margin={0}
                         mouseDrag={true}
-                        smartSpeed={1000}
+                        smartSpeed={1500}
                         dotData={true}
                         autoplay={true}
                         dotsContainer={".owl-thumbs"}
                         loop={true}
                     >
-                        {banneronedata}
+                         {/* <div class="item-video" data-merge="3"><a class="owl-video" href="https://vimeo.com/23924346"></a></div> */}
+                       {banneronedata} 
+                     
                     </OwlCarousel>
+
 
                     <div className="owl-thumbs">
                         {thumbdata}

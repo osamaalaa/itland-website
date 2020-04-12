@@ -150,7 +150,7 @@ class NavBar extends Component {
                                         to="partners"
                                         spy={true}
                                         smooth={true}
-                                        offset={-120}
+                                        offset={-220}
                                         duration={800}
                                         className="nav-link"
                                         onClick={this.closeNavbar}
