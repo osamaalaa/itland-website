@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from "prop-types";
 import "react-modal-video/css/modal-video.min.css";
 import ModalVideo from "react-modal-video";
-import ScrollAnimation from "react-animate-on-scroll";
+// import ScrollAnimation from "react-animate-on-scroll";
 class VideoArea extends Component {
     constructor() {
         super();

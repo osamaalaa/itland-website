@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from "prop-types";
-import Icofont from 'react-icofont';
-import { Link } from 'react-router-dom';
-import OwlCarousel from "react-owl-carousel3";
-import ScrollAnimation from 'react-animate-on-scroll';
+// import Icofont from 'react-icofont';
+// import { Link } from 'react-router-dom';
+// import OwlCarousel from "react-owl-carousel3";
+// import ScrollAnimation from 'react-animate-on-scroll';
 
 import osama from "../../../assets/img/osama.jpg";
 import marihan from "../../../assets/img/marihan.jpg";
@@ -13,25 +13,7 @@ import asya from "../../../assets/img/asya.jpg";
 import mohamed from "../../../assets/img/mohamedibrahim.jpg";
 class Team extends Component {
   render() {
-    //Team loop start
-    const teamdata = this.props.teamsData.map((team, index) => (
-        <div className="team-box" key={index}>
-            <img src={team.Image} alt="Description" />
-            <div className="box-content">
-                <div className="box-inner-content">
-                    <h3 className="title">{team.Name}</h3>
-                    <span className="post">{team.Profession}</span>
-                    
-                    {/* <ul className="icon">
-                        <li><Link to={team.facebookLink}><Icofont icon="icofont-facebook" /></Link></li>
-                        <li><Link to={team.linkedinLink}><Icofont icon="icofont-linkedin" /></Link></li>
-                        <li><Link to={team.twitterLink}><Icofont icon="icofont-twitter" /></Link></li>
-                    </ul> */}
-                    <p>itland itland itland itland</p>
-                </div>
-            </div>
-        </div>
-    ));
+    
     //Team loop END 
     return (
         <React.Fragment>
@@ -42,130 +24,75 @@ class Team extends Component {
                                         <span className="section-title-bg">{this.props.SectionbgTitle}</span>
                                     </div>
                         </div>
-            {/* <div className="container">
-                <div className="row">
-                    <div className="col-lg-8 offset-lg-2 text-center">
-                        <ScrollAnimation animateIn="fadeInUp">
-                            <div className="section-title">
-                                <h2>{this.props.sectionTitle}</h2>
-                                <span className="section-title-bg">{this.props.SectionbgTitle}</span>
-                            </div>
-                        </ScrollAnimation>
-                    </div>
+            <div className="box">
+            <div className="card">
+                <div className="imgBx">
+                    <img src={mohamed} alt="images" />
                 </div>
-
-                <div className="row">
-                    <OwlCarousel
-                        className="owl-theme team-slides"
-                        dots= {false}
-                        autoplay= {true}
-                        loop= {true}
-                        margin={30}
-                        nav={true}
-                        smartSpeed= {1000}
-                        autoplayHoverPause= {true}
-                        navText= {[
-                            "<i class='icofont-arrow-left'></i>", 
-                            "<i class='icofont-arrow-right'></i>"
-                        ]}
-                        responsive={{
-                            0: { items: 1 },
-                            768: {
-                                items: 2
-                            },
-                            1024: {
-                                items: 3
-                            },
-                            1200: {
-                                items: 3
-                            }
-                        }}
-                    >
-                        {teamdata}
-                    </OwlCarousel>
+                <div class="details">
+                    <h2>Mohamed Ibrahim<span>Founder & Director</span></h2>
                 </div>
-            </div> */}
-
-    <div class="box">
-      <div class="card">
-        <div class="imgBx">
-            <img src={mohamed} alt="images" />
-        </div>
-        <div class="details">
-            <h2>Mohamed Ibrahim<span>Founder & Director</span></h2>
-        </div>
-      </div>
-    
-       <div class="card">
-         <div class="imgBx">
-            <img src={osama} alt="images" />
-         </div>
-         <div class="details">
-            <h2>Marihan<span>Software Developer</span></h2>
-          </div>
-       </div>
-
-       <div class="card">
-         <div class="imgBx">
-            <img src={marihan} alt="images" />
-         </div>
-         <div class="details">
-            <h2>Marihan<span>Software Developer</span></h2>
-          </div>
-       </div>
-       <div class="card">
-         <div class="imgBx">
-            <img src={asya} alt="images" />
-         </div>
-         <div class="details">
-            <h2>Asya Heikal<span>Sales Specialist</span></h2>
-          </div>
-       </div>
-       <div class="card">
-         <div class="imgBx">
-            <img src={marihan} alt="images" />
-         </div>
-         <div class="details">
-            <h2>Marihan Adel<span>Graphic Designer</span></h2>
-          </div>
-       </div>
-       <div class="card">
-         <div class="imgBx">
-            <img src={osama} alt="images" />
-         </div>
-         <div class="details">
-            <h2>Osama Alaa<span>Software Developer</span></h2>
-          </div>
-       </div>
-       <div class="card">
-         <div class="imgBx">
-            <img src={aya} alt="images" />
-         </div>
-         <div class="details">
-            <h2>Aya Nawar<span>Software Developer</span></h2>
-          </div>
-       </div>
-       <div class="card">
-         <div class="imgBx">
-            <img src={lotfe} alt="images" />
-         </div>
-         <div class="details">
-            <h2>Mohamed Lotfe<span>Marketing Specialist</span></h2>
-          </div>
-       </div>
-
-
-
- 
-     </div>
+            </div>
             
+            <div className="card">
+                <div className="imgBx">
+                    <img src={osama} alt="images" />
+                </div>
+                <div className="details">
+                    <h2>Marihan<span>Software Developer</span></h2>
+                </div>
+            </div>
 
-            
-
-
-
-
-        </section>   
+            <div className="card">
+                <div className="imgBx">
+                    <img src={marihan} alt="images" />
+                </div>
+                <div className="details">
+                    <h2>Marihan<span>Software Developer</span></h2>
+                </div>
+            </div>
+            <div className="card">
+                <div className="imgBx">
+                    <img src={asya} alt="images" />
+                </div>
+                <div className="details">
+                    <h2>Asya Heikal<span>Sales Specialist</span></h2>
+                </div>
+            </div>
+            <div className="card">
+                <div className="imgBx">
+                    <img src={marihan} alt="images" />
+                </div>
+                <div className="details">
+                    <h2>Marihan Adel<span>Graphic Designer</span></h2>
+                </div>
+            </div>
+            <div className="card">
+                <div className="imgBx">
+                    <img src={osama} alt="images" />
+                </div>
+                <div className="details">
+                    <h2>Osama Alaa<span>Software Developer</span></h2>
+                </div>
+            </div>
+            <div className="card">
+                <div className="imgBx">
+                    <img src={aya} alt="images" />
+                </div>
+                <div className="details">
+                    <h2>Aya Nawar<span>Software Developer</span></h2>
+                </div>
+            </div>
+            <div className="card">
+                <div className="imgBx">
+                    <img src={lotfe} alt="images" />
+                </div>
+                <div className="details">
+                    <h2>Mohamed Lotfe<span>Marketing Specialist</span></h2>
+                </div>
+            </div>
+            </div>
+                </section>   
         </React.Fragment>
     );
   }
@@ -181,74 +108,8 @@ Team.propTypes = {
 //Default Props
 Team.defaultProps = {
     SectionbgTitle: "Team",
-    sectionTitle: "Our Team",
-        teamsData: [
-        {
-            Image: require("../../../assets/img/osama.jpg"),
-            Name: "Osama Alaa",
-            Profession: "Software Developer",
-            facebookLink: "/#0",
-            linkedinLink: "/#0",
-            twitterLink: "/#0",
-        },
-        {
-            Image: require("../assets/img/team-two.jpg"),
-            Name: "Osama Alaa",
-            Profession: "Software Developer",
-            facebookLink: "/#0",
-            linkedinLink: "/#0",
-            twitterLink: "/#0",
-        },
-        {
-            Image: require("../assets/img/team-two.jpg"),
-            Name: "Osama Alaa",
-            Profession: "Software Developer",
-            facebookLink: "/#0",
-            linkedinLink: "/#0",
-            twitterLink: "/#0",
-        },
-        {
-            Image: require("../assets/img/team-two.jpg"),
-            Name: "Osama Alaa",
-            Profession: "Software Developer",
-            facebookLink: "/#0",
-            linkedinLink: "/#0",
-            twitterLink: "/#0",
-        },
-        {
-            Image: require("../assets/img/team-two.jpg"),
-            Name: "Osama Alaa",
-            Profession: "Software Developer",
-            facebookLink: "/#0",
-            linkedinLink: "/#0",
-            twitterLink: "/#0",
-        },
-        {
-            Image: require("../assets/img/team-two.jpg"),
-            Name: "Osama Alaa",
-            Profession: "Designer",
-            facebookLink: "/#0",
-            linkedinLink: "/#0",
-            twitterLink: "/#0",
-        },
-        {
-            Image: require("../../../assets/img/marihan.jpg"),
-            Name: "Marihan",
-            Profession: "Graphic Designer",
-            facebookLink: "/#0",
-            linkedinLink: "/#0",
-            twitterLink: "/#0",
-        },
-        {
-            Image: require("../assets/img/team-two.jpg"),
-            Name: "Mark Jone",
-            Profession: "CEO",
-            facebookLink: "/#0",
-            linkedinLink: "/#0",
-            twitterLink: "/#0",
-        },
-        
-    ]
+    sectionTitle: "Our Team"
+    
 };
 
 export default Team;

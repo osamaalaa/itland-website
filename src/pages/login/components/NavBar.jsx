@@ -7,7 +7,7 @@ import { LinkContainer } from "react-router-bootstrap";
 import { Navbar, Container, Nav } from "react-bootstrap";
 
 // import { useState } from 'react';
-import HeaderLink from "./header/HeaderLink";
+// import HeaderLink from "./header/HeaderLink";
 class NavBar extends Component {
     
     componentDidMount() {
@@ -52,33 +52,6 @@ class NavBar extends Component {
       
     return (
         <React.Fragment>
-            {/* Start Top Header */}
-            {/* <div className="top-header">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-7 col-lg-7">
-                            <div className="address-bar">
-                                <ul className="list-inline">
-                                    <li><a href={this.props.mailLink}><Icofont icon="icofont-email"/> {this.props.mail}</a></li>
-                                    <li><a href={this.props.numberLink}><Icofont icon="icofont-ui-call" /> {this.props.Number}</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        
-                        <div className="col-lg-5 col-md-5">
-                            <div className="social-icons">
-                                <ul className="list-inline">
-                                    <li><a href={this.props.facebookLink} rel="noopener noreferrer" target="_blank"><Icofont icon="icofont-facebook" /></a></li>
-                                    <li><a href={this.props.twitterLink} rel="noopener noreferrer" target="_blank"><Icofont icon="icofont-twitter" /></a></li>
-                                    <li><a href={this.props.instagramLink} rel="noopener noreferrer" target="_blank"><Icofont icon="icofont-instagram" /></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> */}
-            {/* End Top Header */}
-
             <Navbar
                 id="navbar"
                 bg="light"
@@ -90,13 +63,11 @@ class NavBar extends Component {
                     <Navbar.Brand className="navbar-brand logo">
                         <React.Fragment>
                             <LinkContainer exact to="/">
-                            <img 
+                                     <img 
                                         className="img-fluid img-one" 
                                         src={this.props.MainLogo}
                                         alt="Logo"
-                                       
-
-                                        
+  
                                     />
                             </LinkContainer>
                         </React.Fragment>
@@ -237,11 +208,9 @@ class NavBar extends Component {
 
                                     <Nav.Item>
                                          <NavLink href="https://www.facebook.com/itlandservices/" target="_blank" className="nav-link"><Icofont icon="icofont-facebook"/></NavLink>
-
-
                                     </Nav.Item>
                                     <Nav.Item>
-                                    <NavLink href="https://www.facebook.com/itlandservices/" target="_blank" className="nav-link"><Icofont icon="icofont-instagram"/></NavLink>
+                                    <NavLink  href="https://www.facebook.com/itlandservices/" target="_blank" className="nav-link"><Icofont icon="icofont-instagram"/></NavLink>
 
 
                                     </Nav.Item>
@@ -253,11 +222,9 @@ class NavBar extends Component {
 
                                     <Nav.Item>
                                     {/* <NavLink href="https://www.facebook.com/itlandservices/" target="_blank" className="nav-link"><Icofont icon="icofont-instagram"/></NavLink> */}
-
-
                                     </Nav.Item>
                                     
-                                <Nav.Item>
+                                {/* <Nav.Item>
                                     <Link
                                         // activeclass="active"
                                      
@@ -270,8 +237,8 @@ class NavBar extends Component {
                                     >
                                         
                                     </Link>
-                                </Nav.Item>
-                                <Nav.Item>
+                                </Nav.Item> */}
+                                {/* <Nav.Item>
                                     <Link
                                         // activeclass="active"
                                      
@@ -284,20 +251,18 @@ class NavBar extends Component {
                                     >
                                         
                                     </Link>
-                                </Nav.Item>
+                                </Nav.Item> */}
                                    
                             
-                                    <Nav.Item>
-                                            <HeaderLink />
-                                    </Nav.Item>
+                                    {/* <Nav.Item> */}
+                                            {/* <HeaderLink /> */}
+                                    {/* </Nav.Item> */}
 
                                 {/* <Nav.Item >
                                     <HeaderLink />
                                     
                                 </Nav.Item> */}
 
-
-                                
                             </React.Fragment>
                         ) : (
                             <React.Fragment>

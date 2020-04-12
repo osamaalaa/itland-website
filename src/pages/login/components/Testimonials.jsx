@@ -68,7 +68,7 @@ Testimonials.defaultProps = {
             Content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fermentum sagittis nulla, non vehicula mauris rutrum vitae. Sed non consequat dolor. Cras in odio augue.",
             Name: "Jason Statham",
             Profession: "Founder & Director",
-        },
+        },  
     ]
 };
 

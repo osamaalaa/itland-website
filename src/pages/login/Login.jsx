@@ -1,5 +1,3 @@
-
-
 import React from 'react';
 import { withRouter } from "react-router-dom";
 //Import Component
@@ -22,7 +20,6 @@ import FAQ from "./components/FAQ";
 import Partner from "./components/Partner"; 
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-
 import { Element } from 'react-scroll'
 // import Employee from './employeePage';
 function Login(props) { 
@@ -31,21 +28,6 @@ function Login(props) {
     <React.Fragment>
     {/* NavBar: src/components/NavBar.jsx */}
      <NavBar pageName="home" /> 
-     {/* <Header
-        color="transparent"
-        routes={dashboardRoutes}
-        brand="IT LAND"
-        rightLinks={<HeaderLinks />}
-        fixed
-        changeColorOnScroll={{
-          height: 400,
-          color: "white"
-        }}
-        {...rest}
-      /> */}
-
-    {/* BannerThree: src/components/banner/BannerThree.jsx */}
-    {/* <BannerThree /> */}
     <BannerOne />
     {/* <BannerTwo /> */}
 
@@ -63,11 +45,11 @@ function Login(props) {
     <Works />
 
     {/* About: src/components/About.jsx */}
-    <About />
+    {/* <About /> */}
     
     
     {/* Blog: src/components/Blog.jsx */}
-    {/* <Blog /> */}
+    {/* <Blog /> */} 
      {/* Partner: src/components/Partner.jsx */}
      <Partner />
      
@@ -84,7 +66,6 @@ function Login(props) {
       
     {/* Team: src/components/Team.jsx */}
     <Team />
-    {/* <Employee /> */}
     {/* Contact: src/components/Contact.jsx */}
     <Contact />
     {/* Footer: src/components/Footer.jsx */}

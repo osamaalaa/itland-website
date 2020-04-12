@@ -6,8 +6,8 @@ import {
   InputBase,
   Menu,
   MenuItem,
-  Fab,
-  Link
+  Fab
+  
 } from "@material-ui/core";
 import {
   Menu as MenuIcon,
@@ -24,7 +24,7 @@ import classNames from "classnames";
 import useStyles from "./styles";
 
 // components
-import { Badge, Typography, Button } from "../Wrappers/Wrappers";
+import { Badge, Typography} from "../Wrappers/Wrappers";
 import Notification from "../Notification/Notification";
 import UserAvatar from "../UserAvatar/UserAvatar";
 
@@ -35,7 +35,7 @@ import {
   toggleSidebar,
 } from "../../context/LayoutContext";
 import { useUserDispatch, signOut } from "../../context/UserContext";
-import logo from "../../assets/img/logo.png"; // logo Import
+// import logo from "../../assets/img/logo.png"; // logo Import
 const messages = [
   {
     id: 0,
@@ -136,7 +136,7 @@ export default function Header(props) {
             />
           )}
         </IconButton>
-        <img src={logo}  className={classes.logo}/>
+      
         <Typography variant="h6" weight="medium" className={classes.logotype}>
               IT-Land Admin Board
         </Typography>

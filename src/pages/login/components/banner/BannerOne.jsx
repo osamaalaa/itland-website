@@ -46,14 +46,14 @@ class BannerOne extends Component {
                                             >
                                                 {bannerone.Content}
                                             </p>
-                                            {/* <div className="center-wrap">
+                                            <div className="center-wrap">
                                                 <Link to={bannerone.BtnLink} className="btn-a">
                                                     <div className="button">
                                                         {bannerone.BtnName}
                                                         <Icofont icon="icofont-long-arrow-right" />
                                                     <div className="mask" /></div>
                                                 </Link>
-                                            </div> */}
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -115,17 +115,13 @@ BannerOne.defaultProps = {
             BgClass: "single-slider-item slide-bg-1",
             TopTitle: "OutSourcing Services",
             Title: "Fully Responsive Design",
-            Content:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet.",
-            BtnLink:  "/#0",
+            BtnLink:  "/itland/outsourcing",
             BtnName: "get started"
         },
         {
             BgClass: "single-slider-item slide-bg-2",
             TopTitle: "Online Marketing services",
             Title: "Fully Responsive Design",
-            Content:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet.",
             BtnLink:  "/#0",
             BtnName: "get started"
         },
@@ -133,8 +129,6 @@ BannerOne.defaultProps = {
             BgClass: "single-slider-item slide-bg-3",
             TopTitle: "Computer courses",
             Title: "Fully Responsive Design",
-            Content:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet.",
             BtnLink:  "/#0",
             BtnName: "get started"
         },
@@ -142,26 +136,20 @@ BannerOne.defaultProps = {
             BgClass: "single-slider-item slide-bg-4",
             TopTitle: "English courses",
             Title: "Fully Responsive Design",
-            Content:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet.",
             BtnLink:  "/#0",
             BtnName: "get started"
         },
         {
-            BgClass: "single-slider-item slide-bg-1",
+            BgClass: "single-slider-item slide-bg-5",
             TopTitle: "Business English",
             Title: "Fully Responsive Design",
-            Content:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet.",
-            BtnLink:  "/#0",
+            BtnLink:  "/itland/outsourcing",
             BtnName: "get started"
         },
         {
-            BgClass: "single-slider-item slide-bg-4",
+            BgClass: "single-slider-item slide-bg-6",
             TopTitle: "English for kids",
             Title: "Fully Responsive Design",
-            Content:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet.",
             BtnLink:  "/#0",
             BtnName: "get started"
         }

@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from "prop-types";
-import Icofont from 'react-icofont';
-import ScrollAnimation from 'react-animate-on-scroll';
+
 import "react-modal-video/css/modal-video.min.css";
-import ModalVideo from "react-modal-video";
+
 
 class About extends Component {
     componentDidMount() {
@@ -28,16 +27,7 @@ class About extends Component {
         this.setState({ isOpen: true });
     }
     render() {
-        //About loop start
-        // const aboutdata = this.props.aboutsData.map((about, index) => (
-        //     <div className="col-lg-4 col-md-6" key={index}>
-        //         <div className="about-info">
-        //             <Icofont icon={about.Icon} />
-        //             <h3>{about.title}</h3>
-        //             <p>{about.content}</p>
-        //         </div>
-        //     </div>
-        // ));
+      
         //About loop END
         return (
             <React.Fragment>

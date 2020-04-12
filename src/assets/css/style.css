@@ -49,7 +49,7 @@ html, body {
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     font-weight: 400;
-    color: #f80000;
+    color: #b33541;
     line-height: 25px;
     letter-spacing: .5;
     overflow-x: hidden;
@@ -339,12 +339,12 @@ button {
 	color: #fff;
 }
 .img-one {
-    padding: 49px;
+    padding: 54px;
     position: static;
     padding-left: 0px;
 }
 .img-two {
-    margin: -7px;
+    margin: -3px;
 }
 
 /* Navbar Style */
@@ -505,7 +505,7 @@ button {
     background-image: url("../img/slide-bg-5.jpg");
 }
 .slide-bg-6 {
-    background-image: url("../img/slide-bg-5.jpg");
+    background-image: url("../img/slide-bg-6.jpg");
 }
 .hompage-slides-wrapper {
 	position: relative;
@@ -1619,7 +1619,7 @@ a.button.border {
     color: #fff;
     display: inline-block;
     padding: 1px 10px;
-    float: right;
+    /* float: right; */
     background-color: rgba(74,74,76,0.7);
     border-radius: 3px;
     top: 15px;
@@ -1772,7 +1772,7 @@ a.button.border {
     color: #fff;
 }
 .box-icon i:before {
-    speak: none;
+
     font-size: 40px;
     line-height: 90px;
     font-style: normal;
@@ -2085,9 +2085,7 @@ a.button.border {
     background-size: cover;
     background-position: center center;
 }
-.bread-cumbs-bg {
-    background-image: url("");
-}
+
 .bread-cumbs-area h1 {
     font-size: 50px;
     font-weight: 700;
