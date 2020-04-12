@@ -166,7 +166,7 @@ BannerOne.defaultProps = {
         },
         {
             ThumbIcon: "icofont-chart-growth",
-            ThumbTitle: "Marketing Services",
+            ThumbTitle: "Digital Marketing",
            
             // ThumbContent: "We strive to embrace and drive change in our industry which allows us to keep our clients relevant.",
         },
