@@ -207,15 +207,15 @@ class NavBar extends Component {
                                    
 
                                     <Nav.Item>
-                                         <NavLink href="https://www.facebook.com/itlandservices/" target="_blank" className="nav-link"><Icofont icon="icofont-facebook"/></NavLink>
+                                         <NavLink href="https://www.facebook.com/itlandservices/" target="_blank" className="nav-link"><Icofont icon="icofont-facebook" size="1.5" spin="true"/></NavLink>
                                     </Nav.Item>
                                     <Nav.Item>
-                                    <NavLink  href="https://www.facebook.com/itlandservices/" target="_blank" className="nav-link"><Icofont icon="icofont-instagram"/></NavLink>
+                                    <NavLink  href="https://www.facebook.com/itlandservices/" target="_blank" className="nav-link"><Icofont icon="icofont-instagram" size="1.5" spin="true" /></NavLink>
 
 
                                     </Nav.Item>
                                     <Nav.Item>
-                                    <NavLink href="https://www.facebook.com/itlandservices/" target="_blank" className="nav-link"><Icofont icon="icofont-linkedin"/></NavLink>
+                                    <NavLink href="https://www.facebook.com/itlandservices/" target="_blank" className="nav-link"><Icofont icon="icofont-linkedin" size="1.5" spin="true"/></NavLink>
 
 
                                     </Nav.Item>
@@ -223,7 +223,20 @@ class NavBar extends Component {
                                     <Nav.Item>
                                     {/* <NavLink href="https://www.facebook.com/itlandservices/" target="_blank" className="nav-link"><Icofont icon="icofont-instagram"/></NavLink> */}
                                     </Nav.Item>
-                                    
+                                    <Nav.Item>
+                                    <Link
+                                        // activeclass="active"
+                                     
+                                        spy={true}
+                                        smooth={true}
+                                        offset={-40}
+                                        duration={800}
+                                        className="nav-link"
+                                       
+                                    >
+                                        
+                                    </Link>
+                                </Nav.Item>
                                 {/* <Nav.Item>
                                     <Link
                                         // activeclass="active"
@@ -238,7 +251,7 @@ class NavBar extends Component {
                                         
                                     </Link>
                                 </Nav.Item> */}
-                                {/* <Nav.Item>
+                                <Nav.Item>
                                     <Link
                                         // activeclass="active"
                                      
@@ -251,7 +264,21 @@ class NavBar extends Component {
                                     >
                                         
                                     </Link>
-                                </Nav.Item> */}
+                                </Nav.Item>
+                                <Nav.Item>
+                                    <Link
+                                        // activeclass="active"
+                                     
+                                        spy={true}
+                                        smooth={true}
+                                        offset={-40}
+                                        duration={800}
+                                        className="nav-link"
+                                       
+                                    >
+                                      <Icofont icon="icofont-key-hole" size="1.5"/>  Login
+                                    </Link>
+                                </Nav.Item>
                                    
                             
                                     {/* <Nav.Item> */}

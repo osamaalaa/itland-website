@@ -35,7 +35,7 @@
 }
 
 .navbar-light.fixed-top, .search-modal, .home-video-area::before, .owl-thumb-item.active, .owl-thumb-item:hover {
-    background-color: #fcf7f8;
+    background-color: #ff5656;
 }
 .navbar-light.fixed-top {
     background-color: #b33541 !important;

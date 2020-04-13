@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import OwlCarousel from "react-owl-carousel3";
 import Icofont from "react-icofont";
 import PropTypes from "prop-types";
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import VisibilitySensor from "react-visibility-sensor";
 
 class BannerOne extends Component {
@@ -46,14 +46,14 @@ class BannerOne extends Component {
                                             >
                                                 {bannerone.Content}
                                             </p>
-                                            {/* <div className="center-wrap">
+                                            <div className="center-wrap">
                                                 <Link to={bannerone.BtnLink} className="btn-a">
                                                     <div className="button">
                                                         {bannerone.BtnName}
                                                         <Icofont icon="icofont-long-arrow-right" />
                                                     <div className="mask" /></div>
                                                 </Link>
-                                            </div> */}
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -85,14 +85,17 @@ class BannerOne extends Component {
                         touchDrag={true}
                         margin={0}
                         mouseDrag={true}
-                        smartSpeed={1000}
+                        smartSpeed={1500}
                         dotData={true}
                         autoplay={true}
                         dotsContainer={".owl-thumbs"}
                         loop={true}
                     >
-                        {banneronedata}
+                         {/* <div class="item-video" data-merge="3"><a class="owl-video" href="https://vimeo.com/23924346"></a></div> */}
+                       {banneronedata} 
+                     
                     </OwlCarousel>
+
 
                     <div className="owl-thumbs">
                         {thumbdata}
@@ -115,17 +118,13 @@ BannerOne.defaultProps = {
             BgClass: "single-slider-item slide-bg-1",
             TopTitle: "OutSourcing Services",
             Title: "Fully Responsive Design",
-            Content:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet.",
-            BtnLink:  "/#0",
+            BtnLink:  "/itland/outsourcing",
             BtnName: "get started"
         },
         {
             BgClass: "single-slider-item slide-bg-2",
             TopTitle: "Online Marketing services",
             Title: "Fully Responsive Design",
-            Content:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet.",
             BtnLink:  "/#0",
             BtnName: "get started"
         },
@@ -133,8 +132,6 @@ BannerOne.defaultProps = {
             BgClass: "single-slider-item slide-bg-3",
             TopTitle: "Computer courses",
             Title: "Fully Responsive Design",
-            Content:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet.",
             BtnLink:  "/#0",
             BtnName: "get started"
         },
@@ -142,8 +139,6 @@ BannerOne.defaultProps = {
             BgClass: "single-slider-item slide-bg-4",
             TopTitle: "English courses",
             Title: "Fully Responsive Design",
-            Content:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet.",
             BtnLink:  "/#0",
             BtnName: "get started"
         },
@@ -151,17 +146,13 @@ BannerOne.defaultProps = {
             BgClass: "single-slider-item slide-bg-5",
             TopTitle: "Business English",
             Title: "Fully Responsive Design",
-            Content:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet.",
-            BtnLink:  "/#0",
+            BtnLink:  "/itland/outsourcing",
             BtnName: "get started"
         },
         {
             BgClass: "single-slider-item slide-bg-6",
             TopTitle: "English for kids",
             Title: "Fully Responsive Design",
-            Content:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet.",
             BtnLink:  "/#0",
             BtnName: "get started"
         }
@@ -169,36 +160,36 @@ BannerOne.defaultProps = {
     thumbsData: [
         {
             ThumbIcon: "icofont-live-support",
-            ThumbTitle: "Outsourcing Services",
+            ThumbTitle: "Outsourcing 1",
             
             // ThumbContent: "We strive to embrace and drive change in our industry which allows us to keep our clients relevant.",
         },
         {
             ThumbIcon: "icofont-chart-growth",
-            ThumbTitle: "Marketing Services",
+            ThumbTitle: "Outsourcing 2",
            
             // ThumbContent: "We strive to embrace and drive change in our industry which allows us to keep our clients relevant.",
         },
         {
             ThumbIcon: "icofont-computer",
-            ThumbTitle: "Computer Courses",
+            ThumbTitle: "Outsourcing 2",
            
             // ThumbContent: "We strive to embrace and drive change in our industry which allows us to keep our clients relevant.",
         },
         {
             ThumbIcon: "icofont-learn",
-            ThumbTitle: "English Courses",
+            ThumbTitle: "Outsourcing 3",
             
             // ThumbContent: "We strive to embrace and drive change in our industry which allows us to keep our clients relevant.",
         },
         {
             ThumbIcon: "icofont-rocket-alt-1",
-            ThumbTitle: "Business English",
+            ThumbTitle: "Outsourcing 4",
             // ThumbContent: "We strive to embrace and drive change in our industry which allows us to keep our clients relevant.",
         },
         {
             ThumbIcon: "icofont-kid",
-            ThumbTitle: "English For Kids",
+            ThumbTitle: "Outsourcing 5",
             // ThumbContent: "We strive to embrace and drive change in our industry which allows us to keep our clients relevant.",
         },
     ]

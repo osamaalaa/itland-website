@@ -59,11 +59,11 @@ export default function HeaderLinks(props)
 
   // =======================
   // global
-  var userDispatch = useUserDispatch();
+  // var userDispatch = useUserDispatch();
 
   // local
-  var [isLoading, setIsLoading] = useState(false);
-  var [error, setError] = useState(null);
+  // var [isLoading, setIsLoading] = useState(false);
+  // var [error, setError] = useState(null);
   // var [activeTabId, setActiveTabId] = useState(0);
   // var [nameValue, setNameValue] = useState("");
   var [loginValue, setLoginValue] = useState("");
@@ -77,8 +77,8 @@ export default function HeaderLinks(props)
         <Button
           color="transparent"
           className={classes.navLink}
-          onClick={handleOpen}>
-          <LockOpenIcon className={classes.icons} /> Login
+          onClick={handleOpen} disabled>
+          <LockOpenIcon className={classes.icons}  /> Login
         </Button>
         {/* ====================Model=================================== */}
         <Modal
@@ -106,7 +106,7 @@ export default function HeaderLinks(props)
                                   label="ITLAND Code"
                                    type="email"    
                                     value={loginValue}
-                                    onChange={e => setLoginValue(e.target.value)} fullWidth autoFocus required />
+                                     fullWidth autoFocus required />
                               </Grid>
                           </Grid>
                           <Grid container spacing={8} alignItems="flex-end">
@@ -115,7 +115,7 @@ export default function HeaderLinks(props)
                               </Grid>
                               <Grid item md={true} sm={true} xs={true}>
                                   <TextField id="username" label="Password" type="password"  value={passwordValue}
-                                                          onChange={e => setPasswordValue(e.target.value)} fullWidth required />
+                                                           fullWidth required />
                               </Grid>
                           </Grid>
                           <Grid container alignItems="center" justify="space-between">
@@ -136,18 +136,9 @@ export default function HeaderLinks(props)
                                disabled={
                                 loginValue.length === 0 || passwordValue.length === 0
                               }
-                              onClick={() =>
-                                loginUser(
-                                  userDispatch,
-                                  loginValue,
-                                  passwordValue,
-                                  props.history,
-                                  setIsLoading,
-                                  setError,
-                                )
-                              }
+                              
                                
-                               >Login</Button>
+                               disabled >Login</Button>
                           </Grid>
                       </div>
                   </Paper>

@@ -10,18 +10,18 @@ const images = [
     require("../../../assets/img/work-1.jpg"),
     require("../../../assets/img/work-2.jpg"),
     require("../../../assets/img/work-2.jpg"),
-    require("../assets/img/work-4.jpg"),
-    require("../assets/img/work-5.jpg"),
-    require("../assets/img/work-6.jpg")
+    require("../../../assets/img/work-4.jpg"),
+    require("../../../assets/img/work-5.jpg"),
+    require("../../../assets/img/work-6.jpg")
   ];
   
   const smallImages = [
       require("../../../assets/img/work-1.jpg"),
       require("../../../assets/img/work-2.jpg"),
       require("../../../assets/img/work-2.jpg"),
-      require("../assets/img/work-4.jpg"),
-      require("../assets/img/work-5.jpg"),
-      require("../assets/img/work-6.jpg")
+      require("../../../assets/img/work-4.jpg"),
+      require("../../../assets/img/work-5.jpg"),
+      require("../../../assets/img/work-6.jpg")
   ];
 
 class Works extends Component {
