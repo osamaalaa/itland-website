@@ -116,42 +116,42 @@ BannerOne.defaultProps = {
     banneronesData: [
         {
             BgClass: "single-slider-item slide-bg-1",
-            TopTitle: "OutSourcing Services",
+            TopTitle: "Development & Support",
             Title: "Fully Responsive Design",
             BtnLink:  "/itland/outsourcing",
             BtnName: "get started"
         },
         {
             BgClass: "single-slider-item slide-bg-2",
-            TopTitle: "Online Marketing services",
+            TopTitle: "Mobile Applications",
             Title: "Fully Responsive Design",
             BtnLink:  "/#0",
             BtnName: "get started"
         },
         {
             BgClass: "single-slider-item slide-bg-3",
-            TopTitle: "Computer courses",
+            TopTitle: "Small Business Solutions",
             Title: "Fully Responsive Design",
             BtnLink:  "/#0",
             BtnName: "get started"
         },
         {
             BgClass: "single-slider-item slide-bg-4",
-            TopTitle: "English courses",
+            TopTitle: "Enterprise Solutions",
             Title: "Fully Responsive Design",
             BtnLink:  "/#0",
             BtnName: "get started"
         },
         {
             BgClass: "single-slider-item slide-bg-5",
-            TopTitle: "Business English",
+            TopTitle: "E-Commerce Solutions",
             Title: "Fully Responsive Design",
             BtnLink:  "/itland/outsourcing",
             BtnName: "get started"
         },
         {
             BgClass: "single-slider-item slide-bg-6",
-            TopTitle: "English for kids",
+            TopTitle: "Digital Marketing",
             Title: "Fully Responsive Design",
             BtnLink:  "/#0",
             BtnName: "get started"
@@ -159,37 +159,37 @@ BannerOne.defaultProps = {
     ],
     thumbsData: [
         {
-            ThumbIcon: "icofont-live-support",
-            ThumbTitle: "Outsourcing 1",
+            ThumbIcon: "icofont-responsive",
+            ThumbTitle: "Development & Support",
             
             // ThumbContent: "We strive to embrace and drive change in our industry which allows us to keep our clients relevant.",
         },
         {
-            ThumbIcon: "icofont-chart-growth",
-            ThumbTitle: "Outsourcing 2",
+            ThumbIcon: "icofont-smart-phone",
+            ThumbTitle: "Mobile Applications",
            
             // ThumbContent: "We strive to embrace and drive change in our industry which allows us to keep our clients relevant.",
         },
         {
-            ThumbIcon: "icofont-computer",
-            ThumbTitle: "Outsourcing 2",
+            ThumbIcon: "icofont-company",
+            ThumbTitle: "Small Business Solutions",
            
             // ThumbContent: "We strive to embrace and drive change in our industry which allows us to keep our clients relevant.",
         },
         {
-            ThumbIcon: "icofont-learn",
-            ThumbTitle: "Outsourcing 3",
+            ThumbIcon: "icofont-web",
+            ThumbTitle: "Enterprise Solutions",
             
             // ThumbContent: "We strive to embrace and drive change in our industry which allows us to keep our clients relevant.",
         },
         {
-            ThumbIcon: "icofont-rocket-alt-1",
-            ThumbTitle: "Outsourcing 4",
+            ThumbIcon: "icofont-attachment",
+            ThumbTitle: "E-Commerce Solutions",
             // ThumbContent: "We strive to embrace and drive change in our industry which allows us to keep our clients relevant.",
         },
         {
-            ThumbIcon: "icofont-kid",
-            ThumbTitle: "Outsourcing 5",
+            ThumbIcon: "icofont-ui-user-group",
+            ThumbTitle: "Digital Marketing",
             // ThumbContent: "We strive to embrace and drive change in our industry which allows us to keep our clients relevant.",
         },
     ]

@@ -63,7 +63,7 @@ Services.defaultProps = {
             icon: "icofont-live-support",
             heading: "Outsourcing Services",
             description:
-                "Get closer to your customers. So close that you tell them what they need well before They realize it themselves."
+                "A World Class Creative Canadian Company with its Egyptian Site Offering, Professional, High Quality, Affordable Websites, Web & Mobile Applications, e-Commerce and Software Solutions for Small Business & Enterprises."
         },
         {
             icon: "icofont-chart-growth",

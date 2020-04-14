@@ -33,9 +33,9 @@ class Services extends Component {
                             </ScrollAnimation>
                         </div>
                     </div>
-                    {/* <div className="row">
+                    <div className="row">
                         {servicedata}
-                    </div> */}
+                    </div>
                 </div>
             </section>
         </React.Fragment>
@@ -56,42 +56,42 @@ Services.defaultProps = {
     SectionbgTitle: "Services",
     sectionTitle: "Services",
     sectionDescription:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet.",
+        "A World Class Creative Canadian Company with its Egyptian Site Offering, Professional, High Quality, Affordable Websites, Web & Mobile Applications, e-Commerce and Software Solutions for Small Business & Enterprises.",
 
     servicesData: [
         {
-            icon: "icofont-live-support",
-            heading: "Outsourcing Services",
+            icon: "icofont-responsive",
+            heading: "Website Development & Support",
             description:
                 "Get closer to your customers. So close that you tell them what they need well before They realize it themselves."
         },
         {
-            icon: "icofont-chart-growth",
-            heading: "Online Marketing Services",
+            icon: "icofont-smart-phone",
+            heading: "Mobile Applications",
             description:
                 "Websites promote you 24/7 No employee will do that.                                                             "
         },
         {
-            icon: "icofont-computer",
-            heading: "Computer Courses",
+            icon: "icofont-company",
+            heading: "Small Business Solutions",
             description:
                 "Web development-Mobile development -online Marketing                                                             "
         },
         {
-            icon: "icofont-learn",
-            heading: "English Courses",
+            icon: "icofont-web",
+            heading: "Enterprise Solutions",
             description:
                 "Improve fluency through practice and speaking drills-expanding vocabulary usage through class work and activities "
         },
         {
-            icon: "icofont-rocket-alt-1",
-            heading: "Business English",
+            icon: "icofont-attachment",
+            heading: "E-Commerce Solutions",
             description:
                 "Giving a successful presentation-business etiquette-job interviews-business slang and abbreviations               "
         },
         {
-            icon: "icofont-kid",
-            heading: "English For Kids",
+            icon: "icofont-ui-user-group",
+            heading: "Digital Marketing",
             description:
                 "Academic enrichment- recreational activities-intensive school work  help                                           "
         },

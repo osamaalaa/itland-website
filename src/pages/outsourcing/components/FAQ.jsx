@@ -9,7 +9,7 @@ class FAQ extends Component {
     render() {
         return (
             <React.Fragment>
-                <section className="faq ptb-100">
+                <section id="free" className="faq ptb-100">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-8 offset-lg-2 text-center">

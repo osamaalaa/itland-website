@@ -58,14 +58,15 @@ function OutSourcing(props) {
     <FunFacts />
     {/* Testimonials: src/components/Testimonials.jsx */}
     <Testimonials />
-    {/* FAQ: src/components/FAQ.jsx */}
-    <FAQ />
+    
       
     {/* Team: src/components/Team.jsx */}
     {/* <Team /> */}
     {/* <Employee /> */}
     {/* Contact: src/components/Contact.jsx */}
-    {/* <Contact /> */}
+    <Contact />
+    {/* FAQ: src/components/FAQ.jsx */}
+    <FAQ />
     {/* Footer: src/components/Footer.jsx */}
     <Footer />
 </React.Fragment>
