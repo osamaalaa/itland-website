@@ -179,35 +179,50 @@ class NavBar extends Component {
 
                                
 
-                                <Nav.Item>
-                                    
-                                        {/* // activeclass="active"
-                                        // to="pricing"
-                                        // spy={true}
-                                        // smooth={true}
-                                        // offset={-40}
-                                        // duration={800}
-                                        // className="nav-link"
-                                        // onClick={this.closeNavbar} */}
-                                        
-                                        
-                                        <Dropdown>
-                                        <Dropdown.Toggle >
-                                        Pricing
-                                        </Dropdown.Toggle>
-                                       
-                                       <Dropdown.Menu>
-                                         <Dropdown.Item href="#pricing">Packages Prices</Dropdown.Item>
-                                         <Dropdown.Item href="#free">Request a Quote </Dropdown.Item>
-                                         
-                                          </Dropdown.Menu>
-                                        
-                                            </Dropdown>
-                                            
-                                    
-                                        
-                                        
-                                    
+                                <Nav.Item>  
+
+                                <div class="dropdown">
+                                        <button class="nav-link">Pricing</button>
+                                        <div class="dropdown-content">
+                                        <Link
+                                                activeclass="active"
+                                                to="video-area"
+                                                spy={true}
+                                                smooth={true}
+                                                offset={-200}
+                                                duration={800}
+                                                className="nav-link"
+                                                onClick={this.closeNavbar}
+                                            >
+                                                About us
+                                            </Link>
+                                            <Link
+                                                activeclass="active"
+                                                to="video-area"
+                                                spy={true}
+                                                smooth={true}
+                                                offset={-200}
+                                                duration={800}
+                                                className="nav-link"
+                                                onClick={this.closeNavbar}
+                                            >
+                                                About us
+                                            </Link>
+                                            <Link
+                                                activeclass="active"
+                                                to="video-area"
+                                                spy={true}
+                                                smooth={true}
+                                                offset={-200}
+                                                duration={800}
+                                                className="nav-link"
+                                                onClick={this.closeNavbar}
+                                            >
+                                                About us
+                                            </Link>
+                                        </div>
+                                       </div>
+
                                 </Nav.Item>
 
                                 <Nav.Item>
@@ -225,20 +240,7 @@ class NavBar extends Component {
                                     </Link>
                                 </Nav.Item>
 
-                                <Nav.Item>
-                                    <Link
-                                        activeclass="active"
-                                        to="free"
-                                        spy={true}
-                                        smooth={true}
-                                        offset={-20}
-                                        duration={800}
-                                        className="nav-link"
-                                        onClick={this.closeNavbar}
-                                    >
-                                        Free Quote
-                                    </Link>
-                                </Nav.Item>
+                            
                                    
 
                                     <Nav.Item>
@@ -315,7 +317,7 @@ class NavBar extends Component {
                                         offset={-40}
                                         duration={800}
                                         className="nav-link"
-                                       
+                                    
                                     >
                                       <Icofont icon="icofont-key-hole" size="1.5"/>  Login
                                     </Link>
@@ -328,9 +330,6 @@ class NavBar extends Component {
                                     <HeaderLink />
                                     
                                 </Nav.Item> */}
-
-
-                                
                             </React.Fragment>
                         ) : (
                             <React.Fragment>

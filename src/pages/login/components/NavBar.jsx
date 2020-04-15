@@ -204,8 +204,6 @@ class NavBar extends Component {
                                         Contact us
                                     </Link>
                                 </Nav.Item>
-                                   
-
                                     <Nav.Item>
                                          <NavLink href="https://www.facebook.com/itlandservices/" target="_blank" className="nav-link"><Icofont icon="icofont-facebook" size="1.5" spin="true"/></NavLink>
                                     </Nav.Item>
