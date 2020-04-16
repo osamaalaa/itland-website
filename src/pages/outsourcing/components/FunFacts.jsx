@@ -131,11 +131,11 @@ FunFacts.propTypes = {
 };
 
 //Default Props
-FunFacts.defaultProps = {
-    SectionbgTitle: "Fun Facts",
-    sectionTitle: "Some Fun Facts",
-    sectionDescription:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet.",
-};
+// FunFacts.defaultProps = {
+//     SectionbgTitle: "Fun Facts",
+//     sectionTitle: "Some Fun Facts",
+//     sectionDescription:
+//         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet.",
+// };
 
 export default FunFacts;

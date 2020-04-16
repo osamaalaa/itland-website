@@ -400,7 +400,7 @@ button {
     box-shadow: 0 0 10px #ebebeb;
 }
 .menu-shrink .navbar-nav .nav-link {
-    color: #fff !important;
+    color: #000 !important;
 }
 .menu-shrink .navbar-brand.logo-2{
   display: block;
@@ -845,7 +845,7 @@ Services Area CSS
     padding: 60px 0;
 }
 .cta-bg-img {
-    background-image: url("../img/cta-bg-img.jpg");
+    background-image: url("../img/map.png");
 }
 .cta-info {
 	margin-top: 42px;
@@ -1509,7 +1509,7 @@ Services Area CSS
     top: 0;
 }
 .video-bg {
-    background-image: url("../img/video-bg.jpg");
+    background-image: url("../img/map.png");
 }
 .video-inner-content {
     color: #fff;

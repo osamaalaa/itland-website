@@ -10,8 +10,9 @@ import Services from "./components/Services";
 // import WelcomeServices from "./components/WelcomeServices";s
 import Works from "./components/Works";
 import About from "./components/About";
-// import Team from "./components/Team";
-// import Blog from "./components/Blog";
+import Team from "./components/Team";
+//import blog from "./components/Blog";
+import Quote from "./components/Quote";
 import VideoArea from "./components/VideoArea";
 import Pricing from "./components/Pricing";
 import FunFacts from "./components/FunFacts";
@@ -20,7 +21,7 @@ import FAQ from "./components/FAQ";
 import Partner from "./components/Partner"; 
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import { Element } from 'react-scroll'
+import { Element } from 'react-scroll';
 
 function OutSourcing(props) { 
 
@@ -40,33 +41,45 @@ function OutSourcing(props) {
 
     {/* Works: src/components/Works.jsx */}
     <Works />
+    {/* Team: src/components/Team.jsx */}
+    <Team />
+     {/* Blog: src/components/Blog.jsx */}
+    {/* <Blog /> */}
+      {/* Blog: src/components/Blog.jsx */}
+    {/* <Blog /> */}
+    {/* Partner: src/components/Partner.jsx */}
+    <Partner />
 
     {/* About: src/components/About.jsx */}
     <About />
     
     
-    {/* Blog: src/components/Blog.jsx */}
-    {/* <Blog /> */}
-     {/* Partner: src/components/Partner.jsx */}
-     <Partner />
+   
+     
      
     {/* VideoArea: src/components/VideoArea.jsx */}
     <VideoArea />
-    {/* Pricing: src/components/Pricing.jsx */}
-    <Pricing /> 
     {/* FunFacts: src/components/FunFacts.jsx */}
     <FunFacts />
+    {/* Pricing: src/components/Pricing.jsx */}
+    <Pricing /> 
+
+     {/* quote: src/components/Quote.jsx */}
+     <Quote />
+
+   
+    
     {/* Testimonials: src/components/Testimonials.jsx */}
     <Testimonials />
     
       
-    {/* Team: src/components/Team.jsx */}
-    {/* <Team /> */}
+    
     {/* <Employee /> */}
     {/* Contact: src/components/Contact.jsx */}
     <Contact />
-    {/* FAQ: src/components/FAQ.jsx */}
-    <FAQ />
+     {/* FAQ: src/components/FAQ.jsx
+     <FAQ /> */}
+    
     {/* Footer: src/components/Footer.jsx */}
     <Footer />
 </React.Fragment>

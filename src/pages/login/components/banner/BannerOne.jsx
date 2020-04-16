@@ -116,43 +116,43 @@ BannerOne.defaultProps = {
     banneronesData: [
         {
             BgClass: "single-slider-item slide-bg-1",
-            TopTitle: "OutSourcing Services",
-            Title: "Fully Responsive Design",
+            //TopTitle: "OutSourcing Services",
+            Title: "OutSourcing Services",
             BtnLink:  "/itland/outsourcing",
             BtnName: "get started"
         },
         {
             BgClass: "single-slider-item slide-bg-2",
-            TopTitle: "Online Marketing services",
-            Title: "Fully Responsive Design",
+            //TopTitle: "Online Marketing services",
+            Title: "Digtal Marketing services",
             BtnLink:  "/#0",
             BtnName: "get started"
         },
         {
             BgClass: "single-slider-item slide-bg-3",
-            TopTitle: "Computer courses",
-            Title: "Fully Responsive Design",
+            //TopTitle: "Computer courses",
+            Title: "Computer courses",
             BtnLink:  "/#0",
             BtnName: "get started"
         },
         {
             BgClass: "single-slider-item slide-bg-4",
-            TopTitle: "English courses",
-            Title: "Fully Responsive Design",
+           // TopTitle: "English courses",
+            Title: "English courses",
             BtnLink:  "/#0",
             BtnName: "get started"
         },
         {
             BgClass: "single-slider-item slide-bg-5",
-            TopTitle: "Business English",
-            Title: "Fully Responsive Design",
+            //TopTitle: "Business English",
+            Title: "Business English",
             BtnLink:  "/itland/outsourcing",
             BtnName: "get started"
         },
         {
             BgClass: "single-slider-item slide-bg-6",
-            TopTitle: "English for kids",
-            Title: "Fully Responsive Design",
+            //TopTitle: "English for kids",
+            Title: "English for kids",
             BtnLink:  "/#0",
             BtnName: "get started"
         }

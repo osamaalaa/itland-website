@@ -5,6 +5,7 @@ import axios from "axios";
 import { ValidationForm, TextInput } from "react-bootstrap4-form-validation";
 import ScrollAnimation from 'react-animate-on-scroll';
 
+
 class Contact extends Component {
     constructor(props) {
         super(props);
@@ -56,9 +57,14 @@ class Contact extends Component {
                             <div className="col-lg-4 col-md-4">
                                 <div className="address-area">
                                     <div className="addess">
-                                        <Icofont icon="icofont-google-map"/>
+                                        <Icofont icon="icofont-flag"/>
                                         <h4>{this.props.AddTitle}</h4>
                                         <p>{this.props.Address}</p>
+                                    </div>
+                                    <div className="addess">
+                                        <Icofont icon="icofont-flag-alt-2"/>
+                                        <h4>{this.props.AddTitle}</h4>
+                                        <p>{this.props.Address1}</p>
                                     </div>
                                     <div className="email">
                                         <Icofont icon="icofont-email"/>
@@ -69,6 +75,11 @@ class Contact extends Component {
                                         <Icofont icon="icofont-phone"/>
                                         <h4>{this.props.PhoneTitle}</h4>
                                         <p>{this.props.Phone}</p>
+                                    </div>
+                                    <div className="phone">
+                                        <Icofont icon="icofont-telephone"/>
+                                        <h4>{this.props.PhoneTitle}</h4>
+                                        <p>{this.props.Phone1}</p>
                                     </div>
                                 </div>
                             </div>
@@ -211,25 +222,29 @@ class Contact extends Component {
 Contact.propTypes = {
     SectionbgTitle: PropTypes.string,
     sectionTitle: PropTypes.string,
-    sectionDescription: PropTypes.string,
+   // sectionDescription: PropTypes.string,
     AddTitle: PropTypes.string,
     Address: PropTypes.string,
+    Address1: PropTypes.string,
     EmailTitle: PropTypes.string,
     Email: PropTypes.string,
     PhoneTitle: PropTypes.string,
     Phone: PropTypes.string,
+    Phone1: PropTypes.string,
 };
 
 //Default Props
 Contact.defaultProps = {
     SectionbgTitle: "Contact",
-    sectionTitle: "Contact US",
-    sectionDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet.",
+    sectionTitle: "Contact Us",
+    //sectionDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet.",
     AddTitle: "Address",
-    Address: "2750 Quadra Street Victoria, Canada.",
+    Address: "503-101 Kozlov Street Barrie Ontario- L4N 5L7, Canada.",
+    Address1: "45 Khalil el Khayat St., Kafr Abdo, Alexandria, Egypt",
     EmailTitle: "Email",
-    Email: "roxy@gmail.com",
+    Email: "mail@itlandgroup.com Mohammed@itlandgroup.com",
     PhoneTitle: "Phone",
-    Phone: "+1-325-555-0156",
+    Phone: "+1-705-770-7033  ",
+    Phone1: " +20-3543-6921   +20-155-1785-404",
 };
 export default Contact;

@@ -30,7 +30,7 @@ class VideoArea extends Component {
                                 <ModalVideo
                                     channel="youtube"
                                     isOpen={this.state.isOpen}
-                                    videoId="vr0qNXmkUJ8"
+                                    videoId="LpaHqf0RBz0"
                                     onClose={() =>
                                         this.setState({
                                             isOpen: false
@@ -58,7 +58,7 @@ VideoArea.propTypes= {
     Content: PropTypes.string,
 }
 VideoArea.defaultProps = {
-    Title: "About US",
-    Content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fermentum sagittis nulla, non vehicula mauris rutrum vitae. Sed non consequat dolor",
+    Title: "About Us",
+   // Content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fermentum sagittis nulla, non vehicula mauris rutrum vitae. Sed non consequat dolor",
 }
 export default VideoArea;

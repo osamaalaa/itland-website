@@ -84,7 +84,7 @@ Services.defaultProps = {
                 "Improve fluency through practice and speaking drills-expanding vocabulary usage through class work and activities "
         },
         {
-            icon: "icofont-attachment",
+            icon: "icofont-cart-alt",
             heading: "E-Commerce Solutions",
             description:
                 "Giving a successful presentation-business etiquette-job interviews-business slang and abbreviations               "

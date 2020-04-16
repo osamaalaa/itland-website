@@ -55,8 +55,8 @@ Services.propTypes = {
 Services.defaultProps = {
     SectionbgTitle: "Services",
     sectionTitle: "Services",
-    sectionDescription:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet.",
+    //sectionDescription:
+        //"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet.",
 
     servicesData: [
         {

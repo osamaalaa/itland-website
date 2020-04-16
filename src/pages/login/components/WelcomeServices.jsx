@@ -59,6 +59,6 @@ WelcomeServices.defaultProps = {
     Content: "We strive to embrace and drive change in our industry which allows us to keep our clients relevant.",
     BtnLink: "/#0",
     BtnName: "PURCHASE NOW",
-    Image: require("../assets/img/mac-pro.png"),
+    Image: require("../assets/img/lap.png"),
 };
 export default WelcomeServices;

@@ -116,43 +116,43 @@ BannerOne.defaultProps = {
     banneronesData: [
         {
             BgClass: "single-slider-item slide-bg-1",
-            TopTitle: "Development & Support",
-            Title: "Fully Responsive Design",
+            //TopTitle: "Website Development & Support",
+            Title: "Website Development & Support",
             BtnLink:  "/itland/outsourcing",
             BtnName: "get started"
         },
         {
             BgClass: "single-slider-item slide-bg-2",
-            TopTitle: "Mobile Applications",
-            Title: "Fully Responsive Design",
+           // TopTitle: "Mobile Applications",
+            Title: "Mobile Applications",
             BtnLink:  "/#0",
             BtnName: "get started"
         },
         {
             BgClass: "single-slider-item slide-bg-3",
-            TopTitle: "Small Business Solutions",
-            Title: "Fully Responsive Design",
+            //TopTitle: "Small Business Solutions",
+            Title: "Small Business Solutions",
             BtnLink:  "/#0",
             BtnName: "get started"
         },
         {
             BgClass: "single-slider-item slide-bg-4",
-            TopTitle: "Enterprise Solutions",
-            Title: "Fully Responsive Design",
+            //TopTitle: "Enterprise Solutions",
+            Title: "Enterprise Solutions",
             BtnLink:  "/#0",
             BtnName: "get started"
         },
         {
             BgClass: "single-slider-item slide-bg-5",
-            TopTitle: "E-Commerce Solutions",
-            Title: "Fully Responsive Design",
+           // TopTitle: "E-Commerce Solutions",
+            Title: "E-Commerce Solutions",
             BtnLink:  "/itland/outsourcing",
             BtnName: "get started"
         },
         {
             BgClass: "single-slider-item slide-bg-6",
-            TopTitle: "Digital Marketing",
-            Title: "Fully Responsive Design",
+            //TopTitle: "Digital Marketing",
+            Title: "Digital Marketing",
             BtnLink:  "/#0",
             BtnName: "get started"
         }
@@ -160,7 +160,7 @@ BannerOne.defaultProps = {
     thumbsData: [
         {
             ThumbIcon: "icofont-responsive",
-            ThumbTitle: "Development & Support",
+            ThumbTitle: "Website Development",
             
             // ThumbContent: "We strive to embrace and drive change in our industry which allows us to keep our clients relevant.",
         },
@@ -183,7 +183,7 @@ BannerOne.defaultProps = {
             // ThumbContent: "We strive to embrace and drive change in our industry which allows us to keep our clients relevant.",
         },
         {
-            ThumbIcon: "icofont-attachment",
+            ThumbIcon: "icofont-cart-alt",
             ThumbTitle: "E-Commerce Solutions",
             // ThumbContent: "We strive to embrace and drive change in our industry which allows us to keep our clients relevant.",
         },

@@ -63,7 +63,7 @@ function Login(props) {
     {/* Testimonials: src/components/Testimonials.jsx */}
     <Testimonials />
     {/* FAQ: src/components/FAQ.jsx */}
-    <FAQ />
+    {/* <FAQ /> */}
       
     {/* Team: src/components/Team.jsx */}
     <Team />

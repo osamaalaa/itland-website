@@ -14,24 +14,24 @@ import mohamed from "../../../assets/img/mohamedibrahim.jpg";
 class Team extends Component {
   render() {
     //Team loop start
-    const teamdata = this.props.teamsData.map((team, index) => (
-        <div className="team-box" key={index}>
-            <img src={team.Image} alt="Description" />
-            <div className="box-content">
-                <div className="box-inner-content">
-                    <h3 className="title">{team.Name}</h3>
-                    <span className="post">{team.Profession}</span>
+    // const teamdata = this.props.teamsData.map((team, index) => (
+    //     <div className="team-box" key={index}>
+    //         <img src={team.Image} alt="Description" />
+    //         <div className="box-content">
+    //             <div className="box-inner-content">
+    //                 <h3 className="title">{team.Name}</h3>
+    //                 <span className="post">{team.Profession}</span>
                     
-                    {/* <ul className="icon">
-                        <li><Link to={team.facebookLink}><Icofont icon="icofont-facebook" /></Link></li>
-                        <li><Link to={team.linkedinLink}><Icofont icon="icofont-linkedin" /></Link></li>
-                        <li><Link to={team.twitterLink}><Icofont icon="icofont-twitter" /></Link></li>
-                    </ul> */}
-                    <p>itland itland itland itland</p>
-                </div>
-            </div>
-        </div>
-    ));
+    //                 {/* <ul className="icon">
+    //                     <li><Link to={team.facebookLink}><Icofont icon="icofont-facebook" /></Link></li>
+    //                     <li><Link to={team.linkedinLink}><Icofont icon="icofont-linkedin" /></Link></li>
+    //                     <li><Link to={team.twitterLink}><Icofont icon="icofont-twitter" /></Link></li>
+    //                 </ul> */}
+    //                 <p>itland itland itland itland</p>
+    //             </div>
+    //         </div>
+    //     </div>
+    // ));
     //Team loop END 
     return (
         <React.Fragment>
@@ -182,73 +182,73 @@ Team.propTypes = {
 Team.defaultProps = {
     SectionbgTitle: "Team",
     sectionTitle: "Our Team",
-        teamsData: [
-        {
-            Image: require("../../../assets/img/osama.jpg"),
-            Name: "Osama Alaa",
-            Profession: "Software Developer",
-            facebookLink: "/#0",
-            linkedinLink: "/#0",
-            twitterLink: "/#0",
-        },
-        {
-            Image: require("../assets/img/team-two.jpg"),
-            Name: "Osama Alaa",
-            Profession: "Software Developer",
-            facebookLink: "/#0",
-            linkedinLink: "/#0",
-            twitterLink: "/#0",
-        },
-        {
-            Image: require("../assets/img/team-two.jpg"),
-            Name: "Osama Alaa",
-            Profession: "Software Developer",
-            facebookLink: "/#0",
-            linkedinLink: "/#0",
-            twitterLink: "/#0",
-        },
-        {
-            Image: require("../assets/img/team-two.jpg"),
-            Name: "Osama Alaa",
-            Profession: "Software Developer",
-            facebookLink: "/#0",
-            linkedinLink: "/#0",
-            twitterLink: "/#0",
-        },
-        {
-            Image: require("../assets/img/team-two.jpg"),
-            Name: "Osama Alaa",
-            Profession: "Software Developer",
-            facebookLink: "/#0",
-            linkedinLink: "/#0",
-            twitterLink: "/#0",
-        },
-        {
-            Image: require("../assets/img/team-two.jpg"),
-            Name: "Osama Alaa",
-            Profession: "Designer",
-            facebookLink: "/#0",
-            linkedinLink: "/#0",
-            twitterLink: "/#0",
-        },
-        {
-            Image: require("../../../assets/img/marihan.jpg"),
-            Name: "Marihan",
-            Profession: "Graphic Designer",
-            facebookLink: "/#0",
-            linkedinLink: "/#0",
-            twitterLink: "/#0",
-        },
-        {
-            Image: require("../assets/img/team-two.jpg"),
-            Name: "Mark Jone",
-            Profession: "CEO",
-            facebookLink: "/#0",
-            linkedinLink: "/#0",
-            twitterLink: "/#0",
-        },
+    //     teamsData: [
+    //     {
+    //         Image: require("../../../assets/img/osama.jpg"),
+    //         Name: "Osama Alaa",
+    //         Profession: "Software Developer",
+    //         facebookLink: "/#0",
+    //         linkedinLink: "/#0",
+    //         twitterLink: "/#0",
+    //     },
+    //     {
+    //         Image: require("../../../assets/img/osama.jpg"),
+    //         Name: "Osama Alaa",
+    //         Profession: "Software Developer",
+    //         facebookLink: "/#0",
+    //         linkedinLink: "/#0",
+    //         twitterLink: "/#0",
+    //     },
+    //     {
+    //         Image: require("../../../assets/img/osama.jpg"),
+    //         Name: "Osama Alaa",
+    //         Profession: "Software Developer",
+    //         facebookLink: "/#0",
+    //         linkedinLink: "/#0",
+    //         twitterLink: "/#0",
+    //     },
+    //     {
+    //         Image: require("../../../assets/img/osama.jpg"),
+    //         Name: "Osama Alaa",
+    //         Profession: "Software Developer",
+    //         facebookLink: "/#0",
+    //         linkedinLink: "/#0",
+    //         twitterLink: "/#0",
+    //     },
+    //     {
+    //         Image: require("../../../assets/img/osama.jpg"),
+    //         Name: "Osama Alaa",
+    //         Profession: "Software Developer",
+    //         facebookLink: "/#0",
+    //         linkedinLink: "/#0",
+    //         twitterLink: "/#0",
+    //     },
+    //     {
+    //         Image: require("../../../assets/img/osama.jpg"),
+    //         Name: "Osama Alaa",
+    //         Profession: "Designer",
+    //         facebookLink: "/#0",
+    //         linkedinLink: "/#0",
+    //         twitterLink: "/#0",
+    //     },
+    //     {
+    //         Image: require("../../../assets/img/marihan.jpg"),
+    //         Name: "Marihan",
+    //         Profession: "Graphic Designer",
+    //         facebookLink: "/#0",
+    //         linkedinLink: "/#0",
+    //         twitterLink: "/#0",
+    //     },
+    //     {
+    //         Image: require("../../../assets/img/team-two.jpg"),
+    //         Name: "Mark Jone",
+    //         Profession: "CEO",
+    //         facebookLink: "/#0",
+    //         linkedinLink: "/#0",
+    //         twitterLink: "/#0",
+    //     },
         
-    ]
+    // ]
 };
 
 export default Team;
