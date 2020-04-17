@@ -223,7 +223,7 @@ class NavBar extends Component {
                                                 className="nav-link"
                                                 onClick={this.closeNavbar}
                                             >
-                                                Packages 
+                                                Packages Prices
                                             </Link>
                                             <Link
                                                 activeclass="active"
@@ -235,7 +235,7 @@ class NavBar extends Component {
                                                 className="nav-link"
                                                 onClick={this.closeNavbar}
                                             >
-                                                Free quote
+                                                Get a Free quote
                                             </Link>
                                           
                                         </div>
