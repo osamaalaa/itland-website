@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/itland-website/static/css/main.a203e1d5.chunk.css",
+    "main.js": "/itland-website/static/js/main.88d87f41.chunk.js",
+    "main.js.map": "/itland-website/static/js/main.88d87f41.chunk.js.map",
+    "runtime~main.js": "/itland-website/static/js/runtime~main.83f4c776.js",
+    "runtime~main.js.map": "/itland-website/static/js/runtime~main.83f4c776.js.map",
+    "static/css/2.8a599aea.chunk.css": "/itland-website/static/css/2.8a599aea.chunk.css",
+    "static/js/2.0da3bf59.chunk.js": "/itland-website/static/js/2.0da3bf59.chunk.js",
+    "static/js/2.0da3bf59.chunk.js.map": "/itland-website/static/js/2.0da3bf59.chunk.js.map",
+    "index.html": "/itland-website/index.html",
+    "precache-manifest.82832c01c1611ac9a7d85845f62620bf.js": "/itland-website/precache-manifest.82832c01c1611ac9a7d85845f62620bf.js",
+    "service-worker.js": "/itland-website/service-worker.js",
+    "static/css/2.8a599aea.chunk.css.map": "/itland-website/static/css/2.8a599aea.chunk.css.map",
+    "static/css/main.a203e1d5.chunk.css.map": "/itland-website/static/css/main.a203e1d5.chunk.css.map",
+    "static/media/2.png": "/itland-website/static/media/2.3f51499b.png",
+    "static/media/style.css": "/itland-website/static/media/slide-bg-1.5866b718.jpg",
+    "static/media/asya.jpg": "/itland-website/static/media/asya.c91de858.jpg",
+    "static/media/aya.jpg": "/itland-website/static/media/aya.a6c28a47.jpg",
+    "static/media/lap.png": "/itland-website/static/media/lap.fa8a35af.png",
+    "static/media/logoLoginModal.png": "/itland-website/static/media/logoLoginModal.5016a224.png",
+    "static/media/lotfe.jpg": "/itland-website/static/media/lotfe.149dcf60.jpg",
+    "static/media/marihan.jpg": "/itland-website/static/media/marihan.9aaee15e.jpg",
+    "static/media/mohamed_logo.jpg": "/itland-website/static/media/mohamed_logo.396919ab.jpg",
+    "static/media/mohamedibrahim.jpg": "/itland-website/static/media/mohamedibrahim.34005e0e.jpg",
+    "static/media/osama.jpg": "/itland-website/static/media/osama.32225878.jpg",
+    "static/media/video-bg.jpg": "/itland-website/static/media/video-bg.63b34bfb.jpg",
+    "static/media/work-1.jpg": "/itland-website/static/media/work-1.8ac26a2a.jpg",
+    "static/media/work-2.jpg": "/itland-website/static/media/work-2.a5cba785.jpg"
+  }
+}
