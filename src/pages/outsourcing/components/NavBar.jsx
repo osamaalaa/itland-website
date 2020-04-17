@@ -227,7 +227,7 @@ class NavBar extends Component {
                                             </Link>
                                             <Link
                                                 activeclass="active"
-                                                to="quote"
+                                                to="free-quote"
                                                 spy={true}
                                                 smooth={true}
                                                 offset={-40}

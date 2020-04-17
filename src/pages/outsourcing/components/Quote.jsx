@@ -5,7 +5,7 @@ import axios from "axios";
 import { ValidationForm, TextInput } from "react-bootstrap4-form-validation";
 import ScrollAnimation from 'react-animate-on-scroll';
 
-
+import imageLogo from "../../../assets/img/logos/logoLoginModal.png";
 class Quote extends Component {
     constructor(props) {
         super(props);
@@ -39,7 +39,7 @@ class Quote extends Component {
     render() {
         return (
             <React.Fragment>
-                <section id="contact" className="contact-area ptb-100">
+                <section id="free-quote" className="contact-area ptb-100">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-8 offset-lg-2 text-center">
@@ -54,8 +54,8 @@ class Quote extends Component {
                         </div>
 
                         <div className="row">
-                            <div className="col-lg-4 col-md-4">
-                                <div className="address-area">
+                            {/* <div className="col-lg-4 col-md-4"> */}
+                                {/* <div className="address-area">
                                     <div className="addess">
                                         <Icofont icon="icofont-google-map"/>
                                         <h4>{this.props.AddTitle}</h4>
@@ -71,8 +71,8 @@ class Quote extends Component {
                                         <h4>{this.props.PhoneTitle}</h4>
                                         <p>{this.props.Phone}</p>
                                     </div>
-                                </div>
-                            </div>
+                                </div> */}
+                            {/* </div> */}
 
                             <div className="col-lg-8 col-md-8">
                                 <div className="contact-form">
@@ -102,8 +102,50 @@ class Quote extends Component {
                                                     <div className="help-block with-errors" />
                                                 </div>
                                             </div>
+                                         
                                             <div className="col-lg-6 col-md-12">
                                                 <div className="form-group">
+                                                    <TextInput
+                                                        name="subject"
+                                                        id="subject"
+                                                        type="text"
+                                                        successMessage=""
+                                                        errorMessage="Please enter your email subject"
+                                                        className="form-control"
+                                                        placeholder="Company"
+                                                        autoComplete="off"
+                                                        onChange={
+                                                            this.handleFields
+                                                        }
+                                                    />
+                                                </div>
+                                            </div>
+
+                                            <div className="col-lg-12 col-md-12">
+                                                 {/* <div className="form-group"> */}
+                                                    {/* <TextInput
+                                                        name="subject"
+                                                        id="subject"
+                                                        type="text"
+                                                        successMessage=""
+                                                        errorMessage="Please enter your email subject"
+                                                        className="form-control"
+                                                        placeholder="Subject"
+                                                        autoComplete="off"
+                                                        onChange={
+                                                            this.handleFields
+                                                        }
+                                                    /> */}
+                                                    {/* <label for="exampleFormControlSelect1">Needed Services</label>
+                                                            <select class="form-control" id="exampleFormControlSelect1">
+                                                            <option>1</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                            <option>4</option>
+                                                            <option>5</option>
+                                                            </select> */}
+                                                {/* </div>  */}
+                                                 <div className="form-group">
                                                     <TextInput
                                                         name="email"
                                                         id="email"
@@ -124,25 +166,7 @@ class Quote extends Component {
 
                                             <div className="col-lg-6 col-md-6">
                                                 <div className="form-group">
-                                                    <TextInput
-                                                        name="subject"
-                                                        id="subject"
-                                                        type="text"
-                                                        successMessage=""
-                                                        errorMessage="Please enter your email subject"
-                                                        className="form-control"
-                                                        placeholder="Subject"
-                                                        autoComplete="off"
-                                                        onChange={
-                                                            this.handleFields
-                                                        }
-                                                    />
-                                                </div>
-                                            </div>
-
-                                            <div className="col-lg-6 col-md-6">
-                                                <div className="form-group">
-                                                    <TextInput
+                                                    {/* <TextInput
                                                         name="Needed Services"
                                                         id="Needed Services"
                                                         type="text"
@@ -154,20 +178,51 @@ class Quote extends Component {
                                                         onChange={
                                                             this.handleFields
                                                         }
-                                                    />
+                                                    /> */}
+                                                    {/* <label for="exampleFormControlSelect1">Needed Services</label> */}
+                                                            <select class="form-control" id="exampleFormControlSelect1">
+                                                            <option value="" selected disabled>Needed Services</option>
+                                                            <option>E-Commerce Website</option>
+                                                            <option>Mobile Application</option>
+                                                            <option>Mobile Application</option>
+                                                            <option>Mobile Application</option>
+                                                            <option>Mobile Application</option>
+                                                            </select>
                                                 </div>
                                             </div>
-
-
+                                            <div className="col-lg-6 col-md-6">
+                                                <div className="form-group">
+                                                    {/* <TextInput
+                                                        name="Needed Services"
+                                                        id="Needed Services"
+                                                        type="text"
+                                                        successMessage=""
+                                                        errorMessage="Please enter the needed services"
+                                                        className="form-control"
+                                                        
+                                                        autoComplete="off"
+                                                        onChange={
+                                                            this.handleFields
+                                                        }
+                                                    /> */}
+                                                       <select class="form-control" id="exampleFormControlSelect1">
+                                                            <option value="" selected disabled>BUDGET</option>
+                                                            <option>Under $1000</option>
+                                                            <option>Between $1000 - $3000</option>
+                                                            <option>Between $3000 - $10000</option>
+                                                            <option>Over $10000</option>
+                                                            </select>
+                                                </div>
+                                            </div>
                                             <div className="col-lg-12 col-md-12">
                                                 <div className="form-group">
                                                     <TextInput
                                                         name="message"
                                                         id="description"
                                                         multiline
-                                                        placeholder="Your message"
+                                                        placeholder="Please add any details you think it would be useful for us to make a correct estimation"
                                                         className="form-control"
-                                                        required
+                
                                                         successMessage=""
                                                         errorMessage="Please write your message"
                                                         rows="5"
@@ -199,9 +254,14 @@ class Quote extends Component {
                                     ) : null}
                                 </div>
                             </div>
-
+                            <div className="col-lg-4 col-md-4"> 
+                                    <img src={imageLogo} alt="itlandLogo" ></img>
+                            </div>
                         </div>
                     </div>
+                    
+                        
+                    
                 </section>
             </React.Fragment>
         );
@@ -223,9 +283,9 @@ Quote.propTypes = {
 
 //Default Props
 Quote.defaultProps = {
-    SectionbgTitle: "Contact",
-    sectionTitle: "Contact Us",
-    sectionDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet.",
+    SectionbgTitle: "FREE QUOTE",
+    sectionTitle: "GET A FREE QUOTE",
+    sectionDescription: "Request one of our services Web Design | Mobile Apps | Digital Marketing | Hosting",
     AddTitle: "Address",
     Address: "503-101 Kozlov Street Barrie Ontario- L4N 5L7, Canada. 45 Khalil el Khayat St., Kafr Abdo, Alexandria, Egypt",
     EmailTitle: "Email",
